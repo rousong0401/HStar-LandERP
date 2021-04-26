@@ -28,6 +28,7 @@ module.exports = {
         lightred: '#EF9090'
       },
       fontSize: {
+        'xs': '.75rem',
         'sm': '.9375rem',
         'base': '1rem',
         'lg': '1.125rem',

@@ -21,8 +21,5 @@ $(document).ready(function () {
     $('.search__item').removeClass('is-active');
     $('.search__item').eq(index).addClass('is-active');
 
-    // $(this).siblings().find('.nav__link').removeClass('is-active');
-    // $(this).find('.nav__link').toggleClass('is-active');
-
   });
 });

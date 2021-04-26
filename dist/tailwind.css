@@ -1,4 +1,4 @@
-/*! tailwindcss v2.1.1 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.1.2 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -9324,8 +9324,7 @@ video {
 }
 
 .text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
+  font-size: .75rem;
 }
 
 .text-sm {
@@ -27850,25 +27849,21 @@ video {
 
 @import 'layout/header';
 
+@import 'layout/menu';
+
 @import 'layout/nav';
 
 @import 'layout/banner';
 
 @import 'layout/footer';
 
+@import 'pages/index';
+
 @import 'utilites/spacing/margin';
 
 @import 'utilites/spacing/padding';
 
 @import 'utilites/typography/color';
-
-@import 'utilites/typography/font-family';
-
-@import 'utilites/typography/font-size';
-
-@import 'utilites/typography/font-weight';
-
-@import 'utilites/typography/text-align';
 
 @media (min-width: 576px) {
   .sm\:container {
@@ -36644,8 +36639,7 @@ video {
   }
 
   .sm\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
+    font-size: .75rem;
   }
 
   .sm\:text-sm {
@@ -63760,8 +63754,7 @@ video {
   }
 
   .md\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
+    font-size: .75rem;
   }
 
   .md\:text-sm {
@@ -90876,8 +90869,7 @@ video {
   }
 
   .lg\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
+    font-size: .75rem;
   }
 
   .lg\:text-sm {
@@ -117992,8 +117984,7 @@ video {
   }
 
   .xl\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
+    font-size: .75rem;
   }
 
   .xl\:text-sm {
@@ -145108,8 +145099,7 @@ video {
   }
 
   .\32xl\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
+    font-size: .75rem;
   }
 
   .\32xl\:text-sm {

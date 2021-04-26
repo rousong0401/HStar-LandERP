@@ -98,6 +98,7 @@
     <section>
       <div class="banner">
         <div class="banner__media">
+
         </div>
         <div class="banner__search">
           <ul class="search__list flex flex-wrap">
@@ -105,100 +106,124 @@
             <li class="search__item lg:text-xl | xl:text-2xl">土地新聞查詢</li>
             <li class="search__item lg:text-xl | xl:text-2xl">建商查詢</li>
           </ul>
-          <div class="search__content land">
-            <div class="wrap">
-              <form class="form" action="">
-                <div class="form__content flex flex-wrap items-center | md:-ml-4 md:-mb-4 | xl:ml-0 xl:mb-0">
-                  <div class="md:w-1/2 | xl:w-auto">
-                    <div class="form__group | md:pl-4 md:pb-4 | xl:pl-0 xl:pb-0">
-                      <label class="lg:text-xl" for="area">行政區</label>
-                      <select class="form__control area">
-                        <option value="西屯區">西屯區</option>
-                        <option value="南區">南區</option>
-                      </select>
+          <div class="search__main">
+            <div class="search__content">
+              <div class="search__inner land">
+                <div class="wrap">
+                  <form class="form" action="">
+                    <div
+                      class="form__content flex flex-wrap items-center -ml-2.5 -mb-2.5 | md:-ml-4 md:-mb-4 | xl:ml-0 xl:mb-0">
+                      <div class="w-2/6 | md:w-1/2 | xl:w-auto">
+                        <div class="form__group  pl-2.5 pb-2.5 | md:pl-4 md:pb-4 | xl:pl-0 xl:pb-0">
+                          <label class="text-xs | sm:text-base | lg:text-xl" for="area">行政區</label>
+                          <select class="form__control area text-sm | md:text-base">
+                            <option value="西屯區">西屯區</option>
+                            <option value="南區">南區</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="w-4/6 | md:w-1/2 | xl:w-auto">
+                        <div class="form__group pl-2.5 pb-2.5 | md:pl-4 md:pb-4 | xl:pl-0 xl:pb-0">
+                          <label class="text-xs | sm:text-base | lg:text-xl" for="areafilter">地段過濾</label>
+                          <input class="form__control areafilter" type="text" name="地段過濾" required>
+                        </div>
+                      </div>
+                      <div class="w-2/5 | md:w-1/2 | xl:w-auto">
+                        <div class="form__group pl-2.5 pb-2.5 | md:pl-4 md:pb-4 | xl:pl-0 xl:pb-0">
+                          <label class="text-xs | sm:text-base | lg:text-xl" for="lot">地段</label>
+                          <select class="form__control lot text-sm | md:text-base">
+                            <option value="[1001]水源號">[1001]水源號</option>
+                            <option value="[1002]水源號">[1002]水源號</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="w-3/5 | md:w-1/2 | xl:w-auto">
+                        <div class="form__group pl-2.5 pb-2.5 | md:pl-4 md:pb-4 | xl:pl-0 xl:pb-0">
+                          <label class="text-xs | sm:text-base | lg:text-xl" for="landnumber">地號</label>
+                          <input class="form__control landnumber" type="text" name="地號" required>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="md:w-1/2 | xl:w-auto">
-                    <div class="form__group | md:pl-4 md:pb-4 | xl:pl-0 xl:pb-0">
-                      <label class="lg:text-xl" for="areafilter">地段過濾</label>
-                      <input class="form__control areafilter" type="text" name="地段過濾" required>
+                    <div class="form__content mt-4 | xl:mt-6">
+                      <div class="form__group">
+                        <label class="text-xs | sm:text-base | lg:text-xl" for="keywordsearch">關鍵字查詢</label>
+                        <input class="form__control keywordsearch" type="text" name="關鍵字查詢"
+                          placeholder="不知道地段、地號? 輸入建號、建商查詢也可以哦">
+                        <a class="form__send text-2xl" href="javascript:;">查詢</a>
+                      </div>
+                      <span class="form__hot text-xl mt-2.5">熱門關鍵字: #北投水源段、#新富發、#北區、#水源段、#新富發建設</span>
+                      <div class="mobile__form mt-4">
+                        <a class="mobile-form__send ml-4" href="javascript:;">查詢</a>
+                        <span class="mobile-form__hot">熱門關鍵字: #北投水源段、#新富發、#北區、#水源段、#新富發建設</span>
+                      </div>
                     </div>
-                  </div>
-                  <div class="md:w-1/2 | xl:w-auto">
-                    <div class="form__group | md:pl-4 md:pb-4 | xl:pl-0 xl:pb-0">
-                      <label class="lg:text-xl" for="lot">地段</label>
-                      <select class="form__control lot">
-                        <option value="[1001]水源號">[1001]水源號</option>
-                        <option value="[1002]水源號">[1002]水源號</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="md:w-1/2 | xl:w-auto">
-                    <div class="form__group | md:pl-4 md:pb-4 | xl:pl-0 xl:pb-0">
-                      <label class="lg:text-xl" for="landnumber">地號</label>
-                      <input class="form__control landnumber" type="text" name="地號" required>
-                    </div>
-                  </div>
+                  </form>
                 </div>
-
-                <div class="form__content mt-4 | xl:mt-6">
-                  <div class="form__group">
-                    <label class="lg:text-xl" for="keywordsearch">關鍵字查詢</label>
-                    <input class="form__control keywordsearch" type="text" name="關鍵字查詢"
-                      placeholder="不知道地段、地號? 輸入建號、建商查詢也可以哦">
-                    <a class="form__send text-2xl" href="javascript:;">查詢</a>
-                  </div>
-                  <span class="form__hot text-xl mt-2.5">熱門關鍵字: #北投水源段、#新富發、#北區、#水源段、#新富發建設</span>
-                  <div class="mobile__form mt-4">
-                    <a class="mobile-form__send ml-4" href="javascript:;">查詢</a>
-                    <span class="mobile-form__hot">熱門關鍵字: #北投水源段、#新富發、#北區、#水源段、#新富發建設</span>
-                  </div>
-                </div>
-              </form>
+              </div>
+              <div class="search__result">123</div>
             </div>
-          </div>
-          <div class="search__content landnew">
-            <div class="wrap">
-              <form class="form" action="">
-                <div class="form__content flex flex-wrap items-center mb-6">
-                  <div class="form__group">
-                    <label class="form__date text-xl" for="date">日期區間</label>
-                    <input class="form__control" type="date">
-                    <span class="px-5">~</span>
-                    <input class="form__control" type="date">
-                  </div>
+            <div class="search__content">
+              <div class="search__inner landnew">
+                <div class="wrap">
+                  <form class="form" action="">
+                    <div class="form__group">
+                      <label class="form__date text-xs | sm:text-base | lg:text-xl" for="date">日期區間</label>
+                      <div class="w-full flex flex-wrap items-center | sm:w-auto">
+                        <div class="form__groupDate">
+                          <input class="form__control form__controlDate text-sm | md:text-base" type="date">
+                        </div>
+                        <span class="sm:px-2 | md:px-4 | lg:px-5">~</span>
+                        <div class="form__groupDate">
+                          <input class="form__control form__controlDate text-sm | md:text-base" type="date">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__content mt-4 | xl:mt-6">
+                      <div class="form__group">
+                        <label class="text-xs | sm:text-base | lg:text-xl" for="keywordsearch">關鍵字查詢</label>
+                        <input class="form__control keywordsearch" type="text" name="關鍵字查詢"
+                          placeholder="不知道地段、地號? 輸入建號、建商查詢也可以哦">
+                        <a class="form__send text-2xl" href="javascript:;">查詢</a>
+                      </div>
+                      <span class="form__hot text-xl mt-2.5">熱門關鍵字: #北投水源段、#新富發、#北區、#水源段、#新富發建設</span>
+                      <div class="mobile__form mt-4">
+                        <a class="mobile-form__send ml-4" href="javascript:;">查詢</a>
+                        <span class="mobile-form__hot">熱門關鍵字: #北投水源段、#新富發、#北區、#水源段、#新富發建設</span>
+                      </div>
+                    </div>
+                  </form>
                 </div>
-                <div class="form__content">
-                  <div class="form__group flex flex-wrap items-center">
-                    <label class="text-xl" for="keywordsearch">關鍵字查詢</label>
-                    <input class="form__control keywordsearch" type="text" name="關鍵字查詢"
-                      placeholder="不知道地段、地號? 輸入建號、建商查詢也可以哦">
-                    <a class="form__send text-2xl" href="javascript:;">查詢</a>
-                  </div>
-                  <span class="form__hot text-xl mt-2.5">熱門關鍵字: #北投水源段、#新富發、#北區、#水源段、#新富發建設</span>
-                </div>
-              </form>
+              </div>
+              <div class="search__result">456</div>
             </div>
-          </div>
-          <div class="search__content builders">
-            <div class="wrap">
-              <form class="form" action="">
-                <div class="form__content py-11">
-                  <div class="form__group flex flex-wrap items-center">
-                    <label class="text-xl" for="keywordsearch">建商關鍵字查詢</label>
-                    <input class="form__control keywordsearch" type="text" name="關鍵字查詢"
-                      placeholder="不知道地段、地號? 輸入建號、建商查詢也可以哦">
-                    <a class="form__send text-2xl" href="javascript:;">查詢</a>
-                  </div>
-                  <span class="form__buildhot text-xl mt-2.5">熱門關鍵字: #北投水源段、#新富發、#北區、#水源段、#新富發建設</span>
+            <div class="search__content">
+              <div class="search__inner builders">
+                <div class="wrap">
+                  <form class="form" action="">
+                    <div class="form__content">
+                      <div class="form__group">
+                        <label class="text-xs | sm:text-base | lg:text-xl" for="keywordsearch">關鍵字查詢</label>
+                        <input class="form__control keywordsearch" type="text" name="關鍵字查詢"
+                          placeholder="不知道地段、地號? 輸入建號、建商查詢也可以哦">
+                        <a class="form__send text-2xl" href="javascript:;">查詢</a>
+                      </div>
+                      <span class="form__hot text-xl mt-2.5">熱門關鍵字: #北投水源段、#新富發、#北區、#水源段、#新富發建設</span>
+                      <div class="mobile__form mt-4">
+                        <a class="mobile-form__send ml-4" href="javascript:;">查詢</a>
+                        <span class="mobile-form__hot">熱門關鍵字: #北投水源段、#新富發、#北區、#水源段、#新富發建設</span>
+                      </div>
+                    </div>
+                  </form>
                 </div>
-              </form>
+              </div>
+              <div class="search__result">789</div>
             </div>
           </div>
         </div>
       </div>
     </section>
   </main>
+
   <footer class="footer"></footer>
 
 
