@@ -1,0 +1,29 @@
+.nav__list {
+  @include mq($until:lg) {
+    display: none;
+  }
+}
+
+.nav__item {
+  @include mq(lg) {
+    &:nth-child(1),&:nth-child(2) {
+      border-bottom: 1px solid $gray-300;
+    }
+  }
+  @include mq(xl) {
+    &:nth-child(1),&:nth-child(2) {
+      border-bottom: none;
+    }
+    &:not(:last-child) {
+      border-right: 1px solid $gray-300;
+    }
+  }
+}
+
+.nav__link {
+  display: block;
+  transition: all .3s;
+  &:hover {
+    color: $primary;
+  }
+}

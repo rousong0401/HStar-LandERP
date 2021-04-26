@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'config/sass-mq';
+@import 'config/mixins';
+@import 'config/variables';
+@import 'config/normalize';
+@import 'config/reboot';
+
+@import 'layout/wrap';
+@import 'layout/header';
+@import 'layout/menu';
+@import 'layout/nav';
+@import 'layout/banner';
+@import 'layout/footer';
+
+@import 'pages/index';
+
+@import 'utilites/spacing/margin';
+@import 'utilites/spacing/padding';
+@import 'utilites/typography/color';

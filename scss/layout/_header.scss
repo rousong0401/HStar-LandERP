@@ -1,0 +1,180 @@
+.home__main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  box-shadow: 2px 2px 6px #0000004D;
+  background-color: $white;
+  padding: 0 20px;
+  height: 60px;
+  @include mq(md) {
+    padding: 0 40px;
+    height: 150px;
+  }
+  @include mq(lg) {
+    padding: 0 55px;
+    height: 200px;
+  }
+}
+
+.logo {
+  img {
+    @include mq($until:md) {
+      width: 145px;
+    }
+  }
+}
+
+.home__burger {
+  position: relative;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  z-index: 99;
+  @include mq($until:lg) {
+    border: 1px solid #262626;
+    border-radius: 50%;
+  }
+  @include mq(md) {
+    width: 40px;
+    height: 40px;
+  }
+  @include mq(lg) {
+    width: 45px;
+    height: 45px;
+  }
+  @include mq(xl) {
+    width: 50px;
+    height: 50px;
+  }
+  &.is-active {
+    border: 2px solid $white;
+    border-radius: 50%;
+  }
+  span {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 15px;
+    height: 2px;
+    background-color: #262626;
+    border-radius: 4px;
+    transition: all .3s;
+    @include mq(md) {
+      width: 25px;
+    }
+    @include mq(lg) {
+      width: 35px;
+      height: 4px;
+    }
+    @include mq(xl) {
+      width: 47px;
+    }
+    &:first-child {
+      margin: -5px 0 0;
+      @include mq(md) {
+        margin: -7px 0 0;
+      }
+      @include mq(lg) {
+        margin: -8px 0 0;
+      }
+      @include mq(xl) {
+        margin: -12px 0 0;
+      }
+    }
+    &:last-child {
+      margin: 5px 0 0;
+      @include mq(md) {
+        margin: 7px 0 0;
+      }
+      @include mq(lg) {
+        margin: 8px 0 0;
+      }
+      @include mq(xl) {
+        margin: 12px 0 0;
+      }
+    }
+  }
+  &:hover {
+    span {
+      &:first-child {
+        @include mq(lg) {
+          margin: -6px 0 0;
+        }
+      }
+      &:nth-child(2) {
+        @include mq(lg) {
+          opacity: 0;
+          transform: translate(100%,-50%);
+        }
+      }
+      &:last-child {
+        @include mq(lg) {
+        margin: 6px 0 0;
+        }
+      }
+    }
+  }
+  &.is-active {
+    span {
+      width: 12px;
+      height: 2px;
+      background-color: $white;
+      @include mq(md) {
+        width: 20px;
+      }
+      @include mq(lg) {
+        width: 25px;
+      }
+      @include mq(xl) {
+        width: 30px;
+      }
+      &:first-child{
+        margin: 0;
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+      &:nth-child(2){
+        transform: translate(100%, -50%);
+        opacity: 0;
+      }
+      &:last-child{
+        margin: 0;
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+  }
+}
+
+.sign {
+  @include mq($until:lg) {
+    display: none;
+  }
+}
+
+.sign__list {
+  @include mq(lg) {
+    margin-right: 32px;
+  }
+  @include mq(xl) {
+    margin-right: 64px;
+  }
+}
+
+.sign__ltem {
+  @include mq(xl) {
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+}
+
+.sign__link {
+  transition: all .3s;
+  &:hover {
+    color: $lightorange;
+  }
+}
+

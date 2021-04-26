@@ -1,0 +1,197 @@
+.banner {
+  position: relative;
+}
+
+.banner__media {
+  background-image: url(../../img/bg/home-banner.png);
+  height: 542px;
+  @include bg;
+}
+
+.banner__search {
+  position: absolute;
+  width: 100%;
+  @include mq(lg) {
+    margin-top: -195px;
+  }
+}
+
+.search__list {
+  justify-content: center;
+  @include mq($until:lg) {
+    background-color: $gray-200;
+  }
+  @include mq(xl) {
+    margin-left: 170px;
+    justify-content: flex-start;
+  }
+}
+
+.search__item {
+  background-color: $gray-200;
+  color: $white;
+  text-align: center;
+  transition: all .3s;
+  cursor: pointer;
+  padding: 16px 0;
+  width: 33.3333%;
+  @include mq(lg) {
+    border-radius: 8px 8px 0 0;
+    width: 200px;
+  }
+  @include mq(xl) {
+    width: 260px;
+  }
+  &:hover {
+    background-color: $primary;
+  }
+  &:not(:last-child) {
+    border-right: 1px solid #fff;
+    @include mq(lg) {
+      margin-right: 10px;
+    }
+  }
+  &.is-active {
+    background-color: $primary;
+  }
+}
+
+.search__content {
+  background-color: $gray-300;
+  padding: 38px 0;
+  display: none;
+  &.is-active {
+    display: block;
+  }
+}
+
+.form__content {
+  position: relative;
+  @include mq(lg) {
+    justify-content: space-between;
+  }
+}
+
+.form__group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  @include mq($until:lg) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  label {
+    color: $white;
+    @include mq(lg) {
+      margin-right: 20px;
+    }
+  }
+  >span {
+    color: $white;
+  }
+}
+
+
+.form__control {
+  position: relative;
+  border-radius: 9px;
+  width: 100%;
+  padding: .5rem;
+  @include mq(md) {
+    padding: 1rem;
+  }
+  @include mq(lg) {
+    flex: 1;
+    padding: 18px 26px;
+  }
+}
+
+.keywordsearch {
+  flex: 1;
+  @include mq($until:sm) {
+    padding: 2rem;
+  }
+}
+
+.form__send {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  background-color: $lightorange;
+  color: $black;
+  letter-spacing: 6px;
+  transition: all .3s;
+  border-radius: 0 9px 9px 0;
+  width: 200px;
+  height: 100%;
+  @include mq($until:lg) {
+    display: none;
+  }
+  &:hover {
+    background-color: $opacityorange;
+  }
+}
+
+.mobile__form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  @include mq(lg) {
+    display: none;
+  }
+}
+
+.mobile-form__send {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px 35px;
+  background-color: $lightorange;
+  color: $black;
+  letter-spacing: 6px;
+  border-radius: 9px;
+}
+
+.form__hot {
+  display: block;
+  color: #FFFACE;
+  margin-left: 145px;
+  @include mq($until:lg) {
+    display: none;
+  }
+}
+
+.mobile-form__hot {
+  display: inline-block;
+  color: #FFFACE;
+  word-wrap:nowrap;
+  flex: 1;
+}
+
+.form__buildhot {
+  display: block;
+  color: #FFFACE;
+  margin-left: 185px;
+}
+
+.form__date {
+  width: 100px;
+  text-align: right;
+}
+
+.land {
+  label {
+    @include mq(lg) {
+      width: 100px;
+    }
+    @include mq(xl) {
+      width: auto;
+    }
+  }
+}

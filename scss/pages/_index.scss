@@ -1,0 +1,10 @@
+.main {
+  padding-top: 60px;
+  @include mq(md) {
+    padding-top: 150px;
+  }
+  @include mq(lg) {
+    padding-top: 200px;
+  }
+}
+

@@ -1,0 +1,7 @@
+.wrap {
+  margin: 0 auto;
+  max-width: 1440px;
+  @include mq($until:xl) {
+    width: 95%;
+  }
+}
