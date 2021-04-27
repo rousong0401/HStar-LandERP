@@ -15,11 +15,19 @@ $(document).ready(function () {
   $('.search__item').on('click', function () {
     index = $(this).index();
 
+    $('.search__item').eq(index).addClass('is-active').siblings().removeClass('is-active');
+    console.log(this);
     $('.search__content').hide();
     $('.search__content').eq(index).fadeIn();
 
-    $('.search__item').removeClass('is-active');
-    $('.search__item').eq(index).addClass('is-active');
-
   });
+
+  // 點擊查詢顯示對應內容結果
+  $('.form__send').on('click', function () {
+    let id = $(this).data('id');
+    console.log(id);
+    $(id).addClass('is-active');
+
+  })
+
 });

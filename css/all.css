@@ -295,6 +295,10 @@ span { display: inline-block; }
 
 .search__content.is-active { display: block; }
 
+.search__result { display: none; }
+
+.search__result.is-active { display: block; }
+
 .search__inner { background-color: #3B3B3B; padding: 30px 0; }
 
 @media (min-width: 62em) { .search__inner { padding: 40px 0; } }
@@ -317,9 +321,11 @@ span { display: inline-block; }
 
 @media (min-width: 48em) { .form__control { padding: 1rem; } }
 
-@media (min-width: 62em) { .form__control { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; padding: 18px 26px; } }
+@media (min-width: 75em) { .form__control { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; padding: 18px 26px; } }
 
-.form__select { position: relative; }
+.form__select { position: relative; display: inline-block; width: 50%; }
+
+@media (max-width: 74.99em) { .form__select { width: 100%; } }
 
 .form__select::after { content: ''; position: absolute; top: 50%; right: .5rem; width: 16px; height: 16px; -webkit-transform: translateY(-50%); transform: translateY(-50%); background-color: #B2B2B2; border-radius: 4px; background-image: url(../../img/icon/arrow.svg); background-size: cover; background-position: center center; background-repeat: no-repeat; }
 
@@ -360,6 +366,10 @@ span { display: inline-block; }
 @media (min-width: 62em) { .land label { width: 100px; } }
 
 @media (min-width: 75em) { .land label { width: auto; } }
+
+.search__result { display: none; }
+
+.search__result.is-active { display: block; }
 
 .search__resultMain { background-image: url(../../img/bg/new-banner.png); background-size: cover; background-position: center center; background-repeat: no-repeat; padding: 32px 0; }
 
