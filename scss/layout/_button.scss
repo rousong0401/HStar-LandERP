@@ -1,0 +1,14 @@
+.btn {
+  display: inline-block;
+  padding: 10px 32px;
+  transition: all .3s;
+  color: $white;
+  background-color: $opacityorange;
+  text-align: center;
+    &:hover {
+      background-color: $lightorange;
+    }
+  @include mq(xl) {
+    display: none;
+  }
+}

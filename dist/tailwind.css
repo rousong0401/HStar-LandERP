@@ -9520,6 +9520,10 @@ video {
   margin: 5rem;
 }
 
+.m-22 {
+  margin: 5.5rem;
+}
+
 .m-24 {
   margin: 6rem;
 }
@@ -9902,6 +9906,16 @@ video {
 .mx-20 {
   margin-left: 5rem;
   margin-right: 5rem;
+}
+
+.my-22 {
+  margin-top: 5.5rem;
+  margin-bottom: 5.5rem;
+}
+
+.mx-22 {
+  margin-left: 5.5rem;
+  margin-right: 5.5rem;
 }
 
 .my-24 {
@@ -10718,6 +10732,22 @@ video {
 
 .ml-20 {
   margin-left: 5rem;
+}
+
+.mt-22 {
+  margin-top: 5.5rem;
+}
+
+.mr-22 {
+  margin-right: 5.5rem;
+}
+
+.mb-22 {
+  margin-bottom: 5.5rem;
+}
+
+.ml-22 {
+  margin-left: 5.5rem;
 }
 
 .mt-24 {
@@ -36835,6 +36865,10 @@ video {
     margin: 5rem;
   }
 
+  .sm\:m-22 {
+    margin: 5.5rem;
+  }
+
   .sm\:m-24 {
     margin: 6rem;
   }
@@ -37217,6 +37251,16 @@ video {
   .sm\:mx-20 {
     margin-left: 5rem;
     margin-right: 5rem;
+  }
+
+  .sm\:my-22 {
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
+  }
+
+  .sm\:mx-22 {
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
   }
 
   .sm\:my-24 {
@@ -38033,6 +38077,22 @@ video {
 
   .sm\:ml-20 {
     margin-left: 5rem;
+  }
+
+  .sm\:mt-22 {
+    margin-top: 5.5rem;
+  }
+
+  .sm\:mr-22 {
+    margin-right: 5.5rem;
+  }
+
+  .sm\:mb-22 {
+    margin-bottom: 5.5rem;
+  }
+
+  .sm\:ml-22 {
+    margin-left: 5.5rem;
   }
 
   .sm\:mt-24 {
@@ -63950,6 +64010,10 @@ video {
     margin: 5rem;
   }
 
+  .md\:m-22 {
+    margin: 5.5rem;
+  }
+
   .md\:m-24 {
     margin: 6rem;
   }
@@ -64332,6 +64396,16 @@ video {
   .md\:mx-20 {
     margin-left: 5rem;
     margin-right: 5rem;
+  }
+
+  .md\:my-22 {
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
+  }
+
+  .md\:mx-22 {
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
   }
 
   .md\:my-24 {
@@ -65148,6 +65222,22 @@ video {
 
   .md\:ml-20 {
     margin-left: 5rem;
+  }
+
+  .md\:mt-22 {
+    margin-top: 5.5rem;
+  }
+
+  .md\:mr-22 {
+    margin-right: 5.5rem;
+  }
+
+  .md\:mb-22 {
+    margin-bottom: 5.5rem;
+  }
+
+  .md\:ml-22 {
+    margin-left: 5.5rem;
   }
 
   .md\:mt-24 {
@@ -91065,6 +91155,10 @@ video {
     margin: 5rem;
   }
 
+  .lg\:m-22 {
+    margin: 5.5rem;
+  }
+
   .lg\:m-24 {
     margin: 6rem;
   }
@@ -91447,6 +91541,16 @@ video {
   .lg\:mx-20 {
     margin-left: 5rem;
     margin-right: 5rem;
+  }
+
+  .lg\:my-22 {
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
+  }
+
+  .lg\:mx-22 {
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
   }
 
   .lg\:my-24 {
@@ -92263,6 +92367,22 @@ video {
 
   .lg\:ml-20 {
     margin-left: 5rem;
+  }
+
+  .lg\:mt-22 {
+    margin-top: 5.5rem;
+  }
+
+  .lg\:mr-22 {
+    margin-right: 5.5rem;
+  }
+
+  .lg\:mb-22 {
+    margin-bottom: 5.5rem;
+  }
+
+  .lg\:ml-22 {
+    margin-left: 5.5rem;
   }
 
   .lg\:mt-24 {
@@ -118180,6 +118300,10 @@ video {
     margin: 5rem;
   }
 
+  .xl\:m-22 {
+    margin: 5.5rem;
+  }
+
   .xl\:m-24 {
     margin: 6rem;
   }
@@ -118562,6 +118686,16 @@ video {
   .xl\:mx-20 {
     margin-left: 5rem;
     margin-right: 5rem;
+  }
+
+  .xl\:my-22 {
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
+  }
+
+  .xl\:mx-22 {
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
   }
 
   .xl\:my-24 {
@@ -119378,6 +119512,22 @@ video {
 
   .xl\:ml-20 {
     margin-left: 5rem;
+  }
+
+  .xl\:mt-22 {
+    margin-top: 5.5rem;
+  }
+
+  .xl\:mr-22 {
+    margin-right: 5.5rem;
+  }
+
+  .xl\:mb-22 {
+    margin-bottom: 5.5rem;
+  }
+
+  .xl\:ml-22 {
+    margin-left: 5.5rem;
   }
 
   .xl\:mt-24 {
@@ -145295,6 +145445,10 @@ video {
     margin: 5rem;
   }
 
+  .\32xl\:m-22 {
+    margin: 5.5rem;
+  }
+
   .\32xl\:m-24 {
     margin: 6rem;
   }
@@ -145677,6 +145831,16 @@ video {
   .\32xl\:mx-20 {
     margin-left: 5rem;
     margin-right: 5rem;
+  }
+
+  .\32xl\:my-22 {
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
+  }
+
+  .\32xl\:mx-22 {
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
   }
 
   .\32xl\:my-24 {
@@ -146493,6 +146657,22 @@ video {
 
   .\32xl\:ml-20 {
     margin-left: 5rem;
+  }
+
+  .\32xl\:mt-22 {
+    margin-top: 5.5rem;
+  }
+
+  .\32xl\:mr-22 {
+    margin-right: 5.5rem;
+  }
+
+  .\32xl\:mb-22 {
+    margin-bottom: 5.5rem;
+  }
+
+  .\32xl\:ml-22 {
+    margin-left: 5.5rem;
   }
 
   .\32xl\:mt-24 {

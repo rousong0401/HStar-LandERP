@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-chevron-down-solid">
+      <rect width="20" height="20"/>
+    </clipPath>
+  </defs>
+  <g id="chevron-down-solid" clip-path="url(#clip-chevron-down-solid)">
+    <path id="chevron-down-solid-2" data-name="chevron-down-solid" d="M10.268,131.282l-4.45-5.867a.9.9,0,0,1,0-1.025l.519-.684a.462.462,0,0,1,.776,0l3.544,4.649,3.544-4.649a.462.462,0,0,1,.776,0l.519.684a.9.9,0,0,1,0,1.025l-4.45,5.867a.462.462,0,0,1-.777,0Z" transform="translate(-0.656 -117.495)" fill="#fff"/>
+  </g>
+</svg>

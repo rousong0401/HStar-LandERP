@@ -102,9 +102,9 @@
         </div>
         <div class="banner__search">
           <ul class="search__list flex flex-wrap">
-            <li class="search__item text-lg:text-xl | xl:text-2xl">土地查詢</li>
-            <li class="search__item lg:text-xl | xl:text-2xl">土地新聞查詢</li>
-            <li class="search__item lg:text-xl | xl:text-2xl">建商查詢</li>
+            <li class="search__item">土地查詢</li>
+            <li class="search__item">土地新聞查詢</li>
+            <li class="search__item">建商查詢</li>
           </ul>
           <div class="search__main">
             <div class="search__content">
@@ -116,10 +116,12 @@
                       <div class="w-2/6 | md:w-1/2 | xl:w-auto">
                         <div class="form__group  pl-2.5 pb-2.5 | md:pl-4 md:pb-4 | xl:pl-0 xl:pb-0">
                           <label class="text-xs | sm:text-base | lg:text-xl" for="area">行政區</label>
-                          <select class="form__control area text-sm | md:text-base">
-                            <option value="西屯區">西屯區</option>
-                            <option value="南區">南區</option>
-                          </select>
+                          <div class="form__select">
+                            <select class="form__control text-sm | md:text-base">
+                              <option value="西屯區">西屯區</option>
+                              <option value="南區">南區</option>
+                            </select>
+                          </div>
                         </div>
                       </div>
                       <div class="w-4/6 | md:w-1/2 | xl:w-auto">
@@ -131,10 +133,12 @@
                       <div class="w-2/5 | md:w-1/2 | xl:w-auto">
                         <div class="form__group pl-2.5 pb-2.5 | md:pl-4 md:pb-4 | xl:pl-0 xl:pb-0">
                           <label class="text-xs | sm:text-base | lg:text-xl" for="lot">地段</label>
-                          <select class="form__control lot text-sm | md:text-base">
-                            <option value="[1001]水源號">[1001]水源號</option>
-                            <option value="[1002]水源號">[1002]水源號</option>
-                          </select>
+                          <div class="form__select">
+                            <select class="form__control text-sm | md:text-base">
+                              <option value="[1001]水源號">[1001]水源號</option>
+                              <option value="[1002]水源號">[1002]水源號</option>
+                            </select>
+                          </div>
                         </div>
                       </div>
                       <div class="w-3/5 | md:w-1/2 | xl:w-auto">
@@ -160,8 +164,131 @@
                   </form>
                 </div>
               </div>
-              <div class="search__result"></div>
+
+              <div class="search__result land">
+                <div class="search__resultMain">
+                  <div class="wrap">
+                    <div class="search__resultContent">
+                      <div class="search__title">
+                        <h4 class="font-bold mb-4 text-center sm:text-xl | md:text-2xl md:mb-6 md:text-left">
+                          搜尋結果:共12筆符合之土地資料
+                        </h4>
+                      </div>
+                      <ul class="search__resultList">
+                        <li class="search__resultItem md:flex md:flex-wrap md:items-center">
+                          <a class="search__resultLink font-bold pl-3 mb-2 | md:pl-0 md:ml-6 md:mb-0"
+                            href="javascript:;">地段地號:
+                            西屯區安林段837-12地號</a>
+                          <div class="search__resultInner | md:flex md:flex-wrap md:items-center md:ml-6">
+                            <span class="inner__number p-2 mb-2 | md:mb-0 md:mr-4">102中都使字第2125號</span>
+                            <div class="flex flex-wrap items-center">
+                              <img src="img/icon/landcard.svg" alt="">
+                              <span class="inner__date ml-1">發照日期 : </span>
+                              <span class="inner__day">100年6月19日</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="search__resultItem md:flex md:flex-wrap md:items-center">
+                          <a class="search__resultLink font-bold pl-3 mb-2 | md:pl-0 md:ml-6 md:mb-0"
+                            href="javascript:;">地段地號:
+                            西屯區安林段837-12地號</a>
+                          <div class="search__resultInner | md:flex md:flex-wrap md:items-center md:ml-6">
+                            <span class="inner__number p-2 mb-2 | md:mb-0 md:mr-4">102中都使字第2125號</span>
+                            <div class="flex flex-wrap items-center">
+                              <img src="img/icon/landcard.svg" alt="">
+                              <span class="inner__date ml-1">發照日期 : </span>
+                              <span class="inner__day">100年6月19日</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="search__resultItem md:flex md:flex-wrap md:items-center">
+                          <a class="search__resultLink font-bold pl-3 mb-2 | md:pl-0 md:ml-6 md:mb-0"
+                            href="javascript:;">地段地號:
+                            西屯區安林段837-12地號</a>
+                          <div class="search__resultInner | md:flex md:flex-wrap md:items-center md:ml-6">
+                            <span class="inner__number p-2 mb-2 | md:mb-0 md:mr-4">102中都使字第2125號</span>
+                            <div class="flex flex-wrap items-center">
+                              <img src="img/icon/landcard.svg" alt="">
+                              <span class="inner__date ml-1">發照日期 : </span>
+                              <span class="inner__day">100年6月19日</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="search__resultItem md:flex md:flex-wrap md:items-center">
+                          <a class="search__resultLink font-bold pl-3 mb-2 | md:pl-0 md:ml-6 md:mb-0"
+                            href="javascript:;">地段地號:
+                            西屯區安林段837-12地號</a>
+                          <div class="search__resultInner | md:flex md:flex-wrap md:items-center md:ml-6">
+                            <span class="inner__number p-2 mb-2 | md:mb-0 md:mr-4">102中都使字第2125號</span>
+                            <div class="flex flex-wrap items-center">
+                              <img src="img/icon/landcard.svg" alt="">
+                              <span class="inner__date ml-1">發照日期 : </span>
+                              <span class="inner__day">100年6月19日</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="search__resultItem md:flex md:flex-wrap md:items-center">
+                          <a class="search__resultLink font-bold pl-3 mb-2 | md:pl-0 md:ml-6 md:mb-0"
+                            href="javascript:;">地段地號:
+                            西屯區安林段837-12地號</a>
+                          <div class="search__resultInner | md:flex md:flex-wrap md:items-center md:ml-6">
+                            <span class="inner__number p-2 mb-2 | md:mb-0 md:mr-4">102中都使字第2125號</span>
+                            <div class="flex flex-wrap items-center">
+                              <img src="img/icon/landcard.svg" alt="">
+                              <span class="inner__date ml-1">發照日期 : </span>
+                              <span class="inner__day">100年6月19日</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="search__resultItem md:flex md:flex-wrap md:items-center">
+                          <a class="search__resultLink font-bold pl-3 mb-2 | md:pl-0 md:ml-6 md:mb-0"
+                            href="javascript:;">地段地號:
+                            西屯區安林段837-12地號</a>
+                          <div class="search__resultInner | md:flex md:flex-wrap md:items-center md:ml-6">
+                            <span class="inner__number p-2 mb-2 | md:mb-0 md:mr-4">102中都使字第2125號</span>
+                            <div class="flex flex-wrap items-center">
+                              <img src="img/icon/landcard.svg" alt="">
+                              <span class="inner__date ml-1">發照日期 : </span>
+                              <span class="inner__day">100年6月19日</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="search__resultItem md:flex md:flex-wrap md:items-center">
+                          <a class="search__resultLink font-bold pl-3 mb-2 | md:pl-0 md:ml-6 md:mb-0"
+                            href="javascript:;">地段地號:
+                            西屯區安林段837-12地號</a>
+                          <div class="search__resultInner | md:flex md:flex-wrap md:items-center md:ml-6">
+                            <span class="inner__number p-2 mb-2 | md:mb-0 md:mr-4">102中都使字第2125號</span>
+                            <div class="flex flex-wrap items-center">
+                              <img src="img/icon/landcard.svg" alt="">
+                              <span class="inner__date ml-1">發照日期 : </span>
+                              <span class="inner__day">100年6月19日</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="search__resultItem md:flex md:flex-wrap md:items-center">
+                          <a class="search__resultLink font-bold pl-3 mb-2 | md:pl-0 md:ml-6 md:mb-0"
+                            href="javascript:;">地段地號:
+                            西屯區安林段837-12地號</a>
+                          <div class="search__resultInner | md:flex md:flex-wrap md:items-center md:ml-6">
+                            <span class="inner__number p-2 mb-2 | md:mb-0 md:mr-4">102中都使字第2125號</span>
+                            <div class="flex flex-wrap items-center">
+                              <img src="img/icon/landcard.svg" alt="">
+                              <span class="inner__date ml-1">發照日期 : </span>
+                              <span class="inner__day">100年6月19日</span>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="search__moreInfo">
+                        <a class="btn mt-4" href="javascript:;">MORE+</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
             <div class="search__content">
               <div class="search__inner landnew">
                 <div class="wrap">
@@ -194,8 +321,68 @@
                   </form>
                 </div>
               </div>
-              <div class="search__result"></div>
+              <div class="search__result landnew">
+                <div class="search__resultMain">
+                  <div class="wrap">
+                    <div class="search__resultContent">
+                      <div class="search__title">
+                        <h4 class="font-bold mb-4 text-center sm:text-xl | md:text-2xl md:mb-6 md:text-left">
+                          搜尋結果:共12筆符合 #北區水源段 土地標售資料
+                        </h4>
+                      </div>
+                      <ul class="search__resultList">
+                        <li class="search__resultItem">
+                          <div class="search__resultInner ml-3 | md:ml-0 md:flex md:flex-wrap md:items-center ">
+                            <span class="inner__number mb-2 md:mx-6 md:mb-0">2021/01/16</span>
+                            <a class="search__resultLink" href="javascript:;">沿台中捷運搶地!八大重劃區吸金400億元</a>
+                          </div>
+                        </li>
+                        <li class="search__resultItem">
+                          <div class="search__resultInner ml-3 | md:ml-0 md:flex md:flex-wrap md:items-center ">
+                            <span class="inner__number mb-2 md:mx-6 md:mb-0">2021/01/16</span>
+                            <a class="search__resultLink" href="javascript:;">沿台中捷運搶地!八大重劃區吸金400億元</a>
+                          </div>
+                        </li>
+                        <li class="search__resultItem">
+                          <div class="search__resultInner ml-3 | md:ml-0 md:flex md:flex-wrap md:items-center ">
+                            <span class="inner__number mb-2 md:mx-6 md:mb-0">2021/01/16</span>
+                            <a class="search__resultLink" href="javascript:;">沿台中捷運搶地!八大重劃區吸金400億元</a>
+                          </div>
+                        </li>
+                        <li class="search__resultItem">
+                          <div class="search__resultInner ml-3 | md:ml-0 md:flex md:flex-wrap md:items-center ">
+                            <span class="inner__number mb-2 md:mx-6 md:mb-0">2021/01/16</span>
+                            <a class="search__resultLink" href="javascript:;">沿台中捷運搶地!八大重劃區吸金400億元</a>
+                          </div>
+                        </li>
+                        <li class="search__resultItem">
+                          <div class="search__resultInner ml-3 | md:ml-0 md:flex md:flex-wrap md:items-center ">
+                            <span class="inner__number mb-2 md:mx-6 md:mb-0">2021/01/16</span>
+                            <a class="search__resultLink" href="javascript:;">沿台中捷運搶地!八大重劃區吸金400億元</a>
+                          </div>
+                        </li>
+                        <li class="search__resultItem">
+                          <div class="search__resultInner ml-3 | md:ml-0 md:flex md:flex-wrap md:items-center ">
+                            <span class="inner__number mb-2 md:mx-6 md:mb-0">2021/01/16</span>
+                            <a class="search__resultLink" href="javascript:;">沿台中捷運搶地!八大重劃區吸金400億元</a>
+                          </div>
+                        </li>
+                        <li class="search__resultItem">
+                          <div class="search__resultInner ml-3 | md:ml-0 md:flex md:flex-wrap md:items-center ">
+                            <span class="inner__number mb-2 md:mx-6 md:mb-0">2021/01/16</span>
+                            <a class="search__resultLink" href="javascript:;">沿台中捷運搶地!八大重劃區吸金400億元</a>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="search__moreInfo">
+                        <a class="btn mt-4" href="javascript:;">MORE+</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
             <div class="search__content">
               <div class="search__inner builders">
                 <div class="wrap">
@@ -216,7 +403,184 @@
                   </form>
                 </div>
               </div>
-              <div class="search__result"></div>
+              <div class="search__result builders">
+                <div class="search__resultMain">
+                  <div class="wrap">
+                    <div class="search__resultContent mb-22">
+                      <div class="search__title">
+                        <h4 class="font-bold mb-4 text-center sm:text-xl | md:text-2xl md:mb-6 md:text-left">
+                          相關新聞 :
+                        </h4>
+                      </div>
+                      <ul class="search__resultList">
+                        <li class="search__resultItem search__resultItems">
+                          <div class="search__resultInner ml-3 | md:ml-0 md:flex md:flex-wrap md:items-center ">
+                            <span class="inner__number inner__numbers  mb-2 md:mx-6 md:mb-0">2021/01/16</span>
+                            <a class="search__resultLink search__resultLinks"
+                              href="javascript:;">沿台中捷運搶地!八大重劃區吸金400億元</a>
+                          </div>
+                        </li>
+                        <li class="search__resultItem search__resultItems">
+                          <div class="search__resultInner ml-3 | md:ml-0 md:flex md:flex-wrap md:items-center ">
+                            <span class="inner__number inner__numbers  mb-2 md:mx-6 md:mb-0">2021/01/16</span>
+                            <a class="search__resultLink search__resultLinks"
+                              href="javascript:;">沿台中捷運搶地!八大重劃區吸金400億元</a>
+                          </div>
+                        </li>
+                        <li class="search__resultItem search__resultItems">
+                          <div class="search__resultInner ml-3 | md:ml-0 md:flex md:flex-wrap md:items-center ">
+                            <span class="inner__number inner__numbers  mb-2 md:mx-6 md:mb-0">2021/01/16</span>
+                            <a class="search__resultLink search__resultLinks"
+                              href="javascript:;">沿台中捷運搶地!八大重劃區吸金400億元</a>
+                          </div>
+                        </li>
+                        <li class="search__resultItem search__resultItems">
+                          <div class="search__resultInner ml-3 | md:ml-0 md:flex md:flex-wrap md:items-center ">
+                            <span class="inner__number inner__numbers  mb-2 md:mx-6 md:mb-0">2021/01/16</span>
+                            <a class="search__resultLink search__resultLinks"
+                              href="javascript:;">沿台中捷運搶地!八大重劃區吸金400億元</a>
+                          </div>
+                        </li>
+                        <li class="search__resultItem search__resultItems">
+                          <div class="search__resultInner ml-3 | md:ml-0 md:flex md:flex-wrap md:items-center ">
+                            <span class="inner__number inner__numbers  mb-2 md:mx-6 md:mb-0">2021/01/16</span>
+                            <a class="search__resultLink search__resultLinks"
+                              href="javascript:;">沿台中捷運搶地!八大重劃區吸金400億元</a>
+                          </div>
+                        </li>
+                        <li class="search__resultItem search__resultItems">
+                          <div class="search__resultInner ml-3 | md:ml-0 md:flex md:flex-wrap md:items-center ">
+                            <span class="inner__number inner__numbers  mb-2 md:mx-6 md:mb-0">2021/01/16</span>
+                            <a class="search__resultLink search__resultLinks"
+                              href="javascript:;">沿台中捷運搶地!八大重劃區吸金400億元</a>
+                          </div>
+                        </li>
+                        <li class="search__resultItem search__resultItems">
+                          <div class="search__resultInner ml-3 | md:ml-0 md:flex md:flex-wrap md:items-center ">
+                            <span class="inner__number inner__numbers  mb-2 md:mx-6 md:mb-0">2021/01/16</span>
+                            <a class="search__resultLink search__resultLinks"
+                              href="javascript:;">沿台中捷運搶地!八大重劃區吸金400億元</a>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="search__moreInfo">
+                        <a class="btn mt-4" href="javascript:;">MORE+</a>
+                      </div>
+                    </div>
+                    <div class="search__resultContent">
+                      <h4 class="font-bold mb-4 text-center sm:text-xl | md:text-2xl md:mb-6 md:text-left">
+                        相關建案 :
+                      </h4>
+                      <ul class="search__resultList">
+                        <li class="search__resultItem md:flex md:flex-wrap md:items-center">
+                          <a class="search__resultLink font-bold pl-3 mb-2 | md:pl-0 md:ml-6 md:mb-0"
+                            href="javascript:;">地段地號:
+                            西屯區安林段837-12地號</a>
+                          <div class="search__resultInner | md:flex md:flex-wrap md:items-center md:ml-6">
+                            <span class="inner__number p-2 mb-2 | md:mb-0 md:mr-4">102中都使字第2125號</span>
+                            <div class="flex flex-wrap items-center">
+                              <img src="img/icon/landcard.svg" alt="">
+                              <span class="inner__date ml-1">發照日期 : </span>
+                              <span class="inner__day">100年6月19日</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="search__resultItem md:flex md:flex-wrap md:items-center">
+                          <a class="search__resultLink font-bold pl-3 mb-2 | md:pl-0 md:ml-6 md:mb-0"
+                            href="javascript:;">地段地號:
+                            西屯區安林段837-12地號</a>
+                          <div class="search__resultInner | md:flex md:flex-wrap md:items-center md:ml-6">
+                            <span class="inner__number p-2 mb-2 | md:mb-0 md:mr-4">102中都使字第2125號</span>
+                            <div class="flex flex-wrap items-center">
+                              <img src="img/icon/landcard.svg" alt="">
+                              <span class="inner__date ml-1">發照日期 : </span>
+                              <span class="inner__day">100年6月19日</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="search__resultItem md:flex md:flex-wrap md:items-center">
+                          <a class="search__resultLink font-bold pl-3 mb-2 | md:pl-0 md:ml-6 md:mb-0"
+                            href="javascript:;">地段地號:
+                            西屯區安林段837-12地號</a>
+                          <div class="search__resultInner | md:flex md:flex-wrap md:items-center md:ml-6">
+                            <span class="inner__number p-2 mb-2 | md:mb-0 md:mr-4">102中都使字第2125號</span>
+                            <div class="flex flex-wrap items-center">
+                              <img src="img/icon/landcard.svg" alt="">
+                              <span class="inner__date ml-1">發照日期 : </span>
+                              <span class="inner__day">100年6月19日</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="search__resultItem md:flex md:flex-wrap md:items-center">
+                          <a class="search__resultLink font-bold pl-3 mb-2 | md:pl-0 md:ml-6 md:mb-0"
+                            href="javascript:;">地段地號:
+                            西屯區安林段837-12地號</a>
+                          <div class="search__resultInner | md:flex md:flex-wrap md:items-center md:ml-6">
+                            <span class="inner__number p-2 mb-2 | md:mb-0 md:mr-4">102中都使字第2125號</span>
+                            <div class="flex flex-wrap items-center">
+                              <img src="img/icon/landcard.svg" alt="">
+                              <span class="inner__date ml-1">發照日期 : </span>
+                              <span class="inner__day">100年6月19日</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="search__resultItem md:flex md:flex-wrap md:items-center">
+                          <a class="search__resultLink font-bold pl-3 mb-2 | md:pl-0 md:ml-6 md:mb-0"
+                            href="javascript:;">地段地號:
+                            西屯區安林段837-12地號</a>
+                          <div class="search__resultInner | md:flex md:flex-wrap md:items-center md:ml-6">
+                            <span class="inner__number p-2 mb-2 | md:mb-0 md:mr-4">102中都使字第2125號</span>
+                            <div class="flex flex-wrap items-center">
+                              <img src="img/icon/landcard.svg" alt="">
+                              <span class="inner__date ml-1">發照日期 : </span>
+                              <span class="inner__day">100年6月19日</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="search__resultItem md:flex md:flex-wrap md:items-center">
+                          <a class="search__resultLink font-bold pl-3 mb-2 | md:pl-0 md:ml-6 md:mb-0"
+                            href="javascript:;">地段地號:
+                            西屯區安林段837-12地號</a>
+                          <div class="search__resultInner | md:flex md:flex-wrap md:items-center md:ml-6">
+                            <span class="inner__number p-2 mb-2 | md:mb-0 md:mr-4">102中都使字第2125號</span>
+                            <div class="flex flex-wrap items-center">
+                              <img src="img/icon/landcard.svg" alt="">
+                              <span class="inner__date ml-1">發照日期 : </span>
+                              <span class="inner__day">100年6月19日</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="search__resultItem md:flex md:flex-wrap md:items-center">
+                          <a class="search__resultLink font-bold pl-3 mb-2 | md:pl-0 md:ml-6 md:mb-0"
+                            href="javascript:;">地段地號:
+                            西屯區安林段837-12地號</a>
+                          <div class="search__resultInner | md:flex md:flex-wrap md:items-center md:ml-6">
+                            <span class="inner__number p-2 mb-2 | md:mb-0 md:mr-4">102中都使字第2125號</span>
+                            <div class="flex flex-wrap items-center">
+                              <img src="img/icon/landcard.svg" alt="">
+                              <span class="inner__date ml-1">發照日期 : </span>
+                              <span class="inner__day">100年6月19日</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="search__resultItem md:flex md:flex-wrap md:items-center">
+                          <a class="search__resultLink font-bold pl-3 mb-2 | md:pl-0 md:ml-6 md:mb-0"
+                            href="javascript:;">地段地號:
+                            西屯區安林段837-12地號</a>
+                          <div class="search__resultInner | md:flex md:flex-wrap md:items-center md:ml-6">
+                            <span class="inner__number p-2 mb-2 | md:mb-0 md:mr-4">102中都使字第2125號</span>
+                            <div class="flex flex-wrap items-center">
+                              <img src="img/icon/landcard.svg" alt="">
+                              <span class="inner__date ml-1">發照日期 : </span>
+                              <span class="inner__day">100年6月19日</span>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

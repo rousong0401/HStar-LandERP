@@ -31,14 +31,22 @@
   text-align: center;
   transition: all .3s;
   cursor: pointer;
-  padding: 16px 0;
+  padding: 16px;
   width: 33.3333%;
+  font-size: 14px;
+  @include mq(sm) {
+    font-size: 16px;
+  }
+  @include mq(md) {
+    font-size: 20px;
+  }
   @include mq(lg) {
     border-radius: 8px 8px 0 0;
     width: 200px;
   }
   @include mq(xl) {
     width: 260px;
+    font-size: 25px;
   }
   &:hover {
     background-color: $primary;
@@ -108,6 +116,36 @@
   @include mq(lg) {
     flex: 1;
     padding: 18px 26px;
+  }
+}
+
+.form__select {
+  position: relative;
+  // width: 100%;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: .5rem;
+    width: 16px;
+    height: 16px;
+    transform: translateY(-50%);
+    background-color: #B2B2B2;
+    border-radius: 4px;
+    background-image: url(../../img/icon/arrow.svg);
+    @include bg;
+    @include mq(md) {
+      right: 1rem;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  select {
+    display: block;
+    width: 100%;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
   }
 }
 
@@ -205,5 +243,103 @@
     @include mq(xl) {
       width: auto;
     }
+  }
+}
+
+// .search__result {
+//   display: none;
+// }
+
+.search__resultMain {
+  background-image: url(../../img/bg/new-banner.png);
+  @include bg;
+  padding: 32px 0;
+  @include mq(md) {
+    padding: 75px 0;
+  }
+}
+
+.search__resultItem {
+  @include mq(md) {
+    border-left: 5px solid $primary;
+  }
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  @include mq(md) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.search__resultLink {
+  display: block;
+  color: $lightblue;
+  border-left: 5px solid $primary;
+  transition: all .3s;
+  @include mq(sm) {
+    font-size: 18px;
+  }
+  @include mq(md) {
+    border-left: none;
+    font-size: 20px;
+  }
+  &:hover {
+    color: $blue;
+  }
+}
+
+.inner__number {
+  border: 1px solid $gray-400;
+  font-size: 14px;
+  @include mq(sm) {
+    font-size: 16px;
+  }
+  @include mq(md) {
+    font-size: 18px;
+  }
+}
+
+.inner__date {
+  font-size: 14px;
+  @include mq(sm) {
+    font-size: 16px;
+  }
+  @include mq(md) {
+    font-size: 18px;
+  }
+}
+
+.inner__day {
+  font-size: 15px;
+  @include mq($until:md) {
+    font-size: 14px;
+  }
+}
+
+.landnew {
+  .inner__number {
+    width: 110px;
+    text-align: center;
+  }
+  .search__resultLink {
+    border: none;
+  }
+  .search__resultItem {
+    border-left: 5px solid $primary;
+  }
+}
+
+.builders {
+  .inner__numbers {
+    width: 110px;
+    text-align: center;
+  }
+  .search__resultLinks {
+    border: none;
+  }
+  .search__resultItems {
+    border-left: 5px solid $primary;
   }
 }
