@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="dist/tailwind.css">
+  <link rel="stylesheet" href="dist/css/all.min.css">
+  <title>【土地系統】土地查詢</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="home">
+      <div class="home__main flex flex-wrap items-center">
+        <div class="w-1/3">
+          <div class="nav">
+            <ul class="nav__list flex flex-wrap">
+              <li class="nav__item">
+                <a class="nav__link px-4 lg:pb-2 text-xl | xl:pb-0 xl:text-2xl" href="">土地查詢</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link px-4 lg:pb-2 text-xl | xl:pb-0 xl:text-2xl" href="">建商查詢</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link px-4 lg:pt-2 text-xl | xl:pt-0 xl:text-2xl" href="">熱門新聞</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link px-4 lg:pt-2 text-xl | xl:pt-0 xl:text-2xl" href="">統計專區</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-1/3">
+          <div class="logo flex flex-wrap justify-center">
+            <a href="index.html">
+              <img src="img/logo/logo.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="w-1/3">
+          <div class="flex flex-wrap items-center justify-end">
+            <div class="sign">
+              <ul class="sign__list flex flex-wrap">
+                <li class="sign__ltem">
+                  <a class="sign__link text-primary p-4 text-xl | xl:text-2xl" href="">註冊</a>
+                </li>
+                <li class="sign__ltem">
+                  <a class="sign__link text-primary p-4 text-xl | xl:text-2xl" href="">登入</a>
+                </li>
+              </ul>
+            </div>
+            <div class="home__burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link text-2xl" href="">首頁</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link text-2xl" href="">土地查詢</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link text-2xl" href="">建商查詢</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link text-2xl" href="">熱門新聞</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link text-2xl" href="">統計專區</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link text-2xl" href="">會員專區</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link text-2xl" href="">聯絡我們</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__icon" href="">
+                <img src="img/icon/community.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__scroll">
+        <a class="header__scrollArrow" href="javascript:;"></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="engine">
+      <div class="engine__main">
+        <div class="flex flex-wrap items-center">
+          <img class="mr-1" src="img/icon/home-icon.svg" alt="">
+          <a class="text-primary text-bg font-bold" href="index.html">首頁</a>
+          <span class="text-primary text-bg font-bold mx-2.5">></span>
+          <a class="text-primary text-bg font-bold" href="landInquiry.html">土地查詢列表</a>
+          <span class="text-primary text-bg font-bold mx-2.5">></span>
+          <a class="text-primary text-bg font-bold" href="javascript:;">基本資料</a>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="querylist">
+        <div class="wrap__big">
+          <div class="querylist__main">
+            <div class="flex flex-wrap">
+              <img src="img/icon/point.svg" alt="">
+              <span class="text-xl ml-2">地段地號 :</span>
+            </div>
+            <div class="querylist__lotinfo">
+              <div class="lotinfo__list">
+                <div class="lotinfo__item">
+                  <div class="lotinfo__address">
+                    <p>西屯區安林段837-12地號</p>
+                  </div>
+                </div>
+                <div class="lotinfo__item">
+                  <div class="lotinfo__inner flex flex-wrap -ml-2 -mb-2">
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box">
+                        <span class="text-xl">序號</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box">
+                        <span class="text-xl">行政區</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box">
+                        <span class="text-xl">地段</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box">
+                        <span class="text-xl">地號</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box">
+                        <span class="text-xl">登記日期</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box">
+                        <span class="text-xl">登記面積</span>
+                        <span>(平方公尺)</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box">
+                        <span class="text-xl">公告地價</span>
+                        <span>(平方公尺)</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box">
+                        <span class="text-xl">公告現值</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box">
+                        <span class="text-xl">實價登陸</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box">
+                        <span class="text-xl">使用分區</span>
+                      </div>
+                    </div>
+                    <div class="w-2/12 pl-2 pb-2">
+                      <div class="lotinfo__box">
+                        <span class="text-xl">概屬概況</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="lotinfo__item">
+                  <div class="lotinfo__inner flex flex-wrap -ml-2 -mb-2">
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">01</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">大肚區</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">王田段</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">539</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">102/10/18</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">94.27</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">2,400</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">29,000</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">150,000</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">農業區</span>
+                      </div>
+                    </div>
+                    <div class="w-2/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">自然人100%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="lotinfo__item">
+                  <div class="lotinfo__inner flex flex-wrap -ml-2 -mb-2">
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">02</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">大肚區</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">王田段</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">539</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">102/10/18</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">94.27</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">2,400</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">29,000</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">150,000</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">農業區</span>
+                      </div>
+                    </div>
+                    <div class="w-2/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">自然人100%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="lotinfo__item">
+                  <div class="lotinfo__inner flex flex-wrap -ml-2 -mb-2">
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">03</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">大肚區</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">王田段</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">539</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">102/10/18</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">94.27</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">2,400</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">29,000</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">150,000</span>
+                      </div>
+                    </div>
+                    <div class="w-1/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">農業區</span>
+                      </div>
+                    </div>
+                    <div class="w-2/12 pl-2 pb-2">
+                      <div class="lotinfo__box lotinfo__boxInner">
+                        <span class="text-xl">自然人100%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mobile-querylist__lotinfo">
+              <div class="mobile-lotinfo__list">
+                <div class="mobile-lotinfo__item">
+                  <div class="mobile-lotinfo__address">
+                    <p>西屯區安林段837-12地號</p>
+                  </div>
+                </div>
+                <div class="mobile-lotinfo__item">
+                  <div class="mobile-lotinfo__inner">
+                    <div class="w-1/2">
+                      <div class="mobile-lotinfo__boxTitle">
+                        <span>序號</span>
+                      </div>
+                    </div>
+                    <div class="w-1/2 text-right">
+                      <div class="mobile-lotinfo__boxContent">
+                        <span>01</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mobile-lotinfo__inner">
+                    <div class="w-1/2">
+                      <div class="mobile-lotinfo__boxTitle">
+                        <span>序號</span>
+                      </div>
+                    </div>
+                    <div class="w-1/2 text-right">
+                      <div class="mobile-lotinfo__boxContent">
+                        <span>01</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mobile-lotinfo__inner">
+                    <div class="w-1/2">
+                      <div class="mobile-lotinfo__boxTitle">
+                        <span>序號</span>
+                      </div>
+                    </div>
+                    <div class="w-1/2 text-right">
+                      <div class="mobile-lotinfo__boxContent">
+                        <span>01</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mobile-lotinfo__inner">
+                    <div class="w-1/2">
+                      <div class="mobile-lotinfo__boxTitle">
+                        <span>序號</span>
+                      </div>
+                    </div>
+                    <div class="w-1/2 text-right">
+                      <div class="mobile-lotinfo__boxContent">
+                        <span>01</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mobile-lotinfo__inner">
+                    <div class="w-1/2">
+                      <div class="mobile-lotinfo__boxTitle">
+                        <span>序號</span>
+                      </div>
+                    </div>
+                    <div class="w-1/2 text-right">
+                      <div class="mobile-lotinfo__boxContent">
+                        <span>01</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mobile-lotinfo__inner">
+                    <div class="w-1/2">
+                      <div class="mobile-lotinfo__boxTitle">
+                        <span>序號</span>
+                      </div>
+                    </div>
+                    <div class="w-1/2 text-right">
+                      <div class="mobile-lotinfo__boxContent">
+                        <span>01</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mobile-lotinfo__inner">
+                    <div class="w-1/2">
+                      <div class="mobile-lotinfo__boxTitle">
+                        <span>序號</span>
+                      </div>
+                    </div>
+                    <div class="w-1/2 text-right">
+                      <div class="mobile-lotinfo__boxContent">
+                        <span>01</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mobile-lotinfo__inner">
+                    <div class="w-1/2">
+                      <div class="mobile-lotinfo__boxTitle">
+                        <span>序號</span>
+                      </div>
+                    </div>
+                    <div class="w-1/2 text-right">
+                      <div class="mobile-lotinfo__boxContent">
+                        <span>01</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mobile-lotinfo__inner">
+                    <div class="w-1/2">
+                      <div class="mobile-lotinfo__boxTitle">
+                        <span>序號</span>
+                      </div>
+                    </div>
+                    <div class="w-1/2 text-right">
+                      <div class="mobile-lotinfo__boxContent">
+                        <span>01</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mobile-lotinfo__inner">
+                    <div class="w-1/2">
+                      <div class="mobile-lotinfo__boxTitle">
+                        <span>序號</span>
+                      </div>
+                    </div>
+                    <div class="w-1/2 text-right">
+                      <div class="mobile-lotinfo__boxContent">
+                        <span>01</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mobile-lotinfo__inner">
+                    <div class="w-1/2">
+                      <div class="mobile-lotinfo__boxTitle">
+                        <span>序號</span>
+                      </div>
+                    </div>
+                    <div class="w-1/2 text-right">
+                      <div class="mobile-lotinfo__boxContent">
+                        <span>01</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-lotinfo__item"></div>
+                <div class="mobile-lotinfo__item"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="footer__copyright">
+        <p>Copyright © 2021 土地交易情蒐智能估價平台版權所有</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/all.js"></script>
+</body>
+
+</html>

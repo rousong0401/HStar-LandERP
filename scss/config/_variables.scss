@@ -8,7 +8,8 @@ $color:(
   yellow: '#FFF8E0',
   lightred: '#EF9090',
   black: #000000,
-  white: #ffffff
+  white: #ffffff,
+  gray: #E2E2E2
 );
 
 $primary: #E79506;
@@ -21,6 +22,7 @@ $yellow: #FFF8E0;
 $lightred: #EF9090;
 $black: #000000;
 $white: #ffffff;
+$gray: #E2E2E2;
 
 //灰階，寫法nth($grayscale,第幾個顏色、css第一個位子為1，js才是0)
 $gray-100: #AEAEAE;

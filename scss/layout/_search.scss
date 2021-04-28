@@ -157,6 +157,31 @@
 }
 
 .keywordsearch {
+  &::-webkit-input-placeholder {
+    @include mq($until:sm) {
+      font-size: 12px;
+    }
+  }
+  &::-moz-placeholder {
+    @include mq($until:sm) {
+      font-size: 12px;
+    }
+  }
+  &:-ms-input-placeholder {
+    @include mq($until:sm) {
+      font-size: 12px;
+    }
+  }
+  &::-ms-input-placeholder {
+    @include mq($until:sm) {
+      font-size: 12px;
+    }
+  }
+  &::placeholder {
+    @include mq($until:sm) {
+      font-size: 12px;
+    }
+  }
   flex: 1;
   @include mq($until:sm) {
     padding: 1.5rem;

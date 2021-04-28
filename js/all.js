@@ -22,12 +22,41 @@ $(document).ready(function () {
 
   });
 
-  // 點擊查詢顯示對應內容結果
+  // 電腦版-點擊查詢顯示對應內容結果
   $('.form__send').on('click', function () {
     let id = $(this).data('id');
     console.log(id);
     $(id).addClass('is-active');
 
   })
+
+  // 手機版-PC-點擊查詢顯示對應內容結果
+  $('.mobile-form__send').on('click', function () {
+    let id = $(this).data('id');
+    console.log(id);
+    $(id).addClass('is-active');
+
+  })
+
+  //當滑動到特定區塊時加入特定Class
+  $(window).scroll(function () {
+
+    if ($(window).scrollTop() >= $('.banner__search').offset().top) {
+      $('.header__scroll').addClass('is-active');
+    } else {
+      $('.header__scroll').removeClass('is-active');
+    }
+
+  });
+
+  //點擊滑動到特定區塊
+  $('.header__scrollArrow').on('click', function (e) {
+
+    e.preventDefault();
+    $('html,body').animate({
+      scrollTop: $('.banner__search').offset().top
+    }, 700, 'swing');
+
+  });
 
 });

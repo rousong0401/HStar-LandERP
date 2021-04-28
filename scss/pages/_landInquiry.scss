@@ -1,0 +1,102 @@
+// engine
+
+.engine {
+  background-color: #F5F5F5;
+}
+
+.engine__main {
+  margin-left: 160px;
+  padding: 1rem;
+  a {
+    display: block;
+    transition: all .3s;
+    &:hover {
+      color: $lightorange;
+    } 
+  }
+}
+
+// engine end
+
+// querylist
+
+.querylist__main {
+  padding: 45px 30px;
+}
+
+.querylist__lotinfo {
+  margin-bottom: 85px;
+  @include mq($until:xl) {
+    display: none;
+  }
+}
+
+.lotinfo__address {
+  background-color: $lightred;
+  color: $white;
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 8px;
+}
+
+.lotinfo__item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.lotinfo__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  background-color: $green;
+  text-align: center;
+  height: 100%;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.lotinfo__boxInner {
+  background-color: $gray;
+  color: #595757;
+}
+
+// querylist end
+
+// mobile-querylist__lotinfo
+
+.mobile-querylist__lotinfo {
+  @include mq($until:xl) {
+    display: block;
+  }
+}
+
+.mobile-lotinfo__address {
+  background-color: $lightred;
+  color: $white;
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 8px;
+}
+
+.mobile-lotinfo__inner {
+  display: flex;
+  flex-wrap: wrap;
+  &:not(:last-child) {
+    border-bottom: 1px solid $white;
+  }
+}
+
+.mobile-lotinfo__boxTitle {
+  background-color: $green;
+  padding: 1rem;
+}
+
+.mobile-lotinfo__boxContent {
+  background-color: $gray;
+  padding: 1rem;
+}
+
+// mobile-querylist__lotinfo end

@@ -5,3 +5,11 @@
     margin: 0 25px;
   }
 }
+
+.wrap__big {
+  margin: 0 auto;
+  max-width: 1530px;
+  @include mq($until:xl) {
+    margin: 0 30px;
+  }
+}

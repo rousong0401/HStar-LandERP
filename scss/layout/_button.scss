@@ -8,7 +8,4 @@
     &:hover {
       background-color: $lightorange;
     }
-  @include mq(xl) {
-    display: none;
-  }
 }
