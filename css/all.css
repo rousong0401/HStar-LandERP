@@ -533,19 +533,111 @@ span { display: inline-block; }
 
 .lotinfo__boxInner { background-color: #E2E2E2; color: #595757; }
 
-@media (max-width: 74.99em) { .mobile-querylist__lotinfo { display: block; } }
+.mobile-querylist__lotinfo { margin-bottom: 30px; }
+
+@media (min-width: 75em) { .mobile-querylist__lotinfo { display: none; } }
 
 .mobile-lotinfo__item { border-radius: 5px; overflow: hidden; }
 
-.mobile-lotinfo__address { background-color: #EF9090; color: #ffffff; padding: 10px; border-radius: 7px; margin-bottom: 8px; }
+.mobile-lotinfo__item:not(:last-child) { margin-bottom: 17px; }
+
+.mobile-lotinfo__address { background-color: #EF9090; color: #ffffff; padding: 10px; border-radius: 7px; }
+
+@media (max-width: 47.99em) { .mobile-lotinfo__address { font-size: 14px; } }
 
 .mobile-lotinfo__inner { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
 .mobile-lotinfo__inner:not(:last-child) { border-bottom: 1px solid #ffffff; }
 
-.mobile-lotinfo__boxTitle { background-color: #6CB70B; padding: 1rem; }
+.mobile-lotinfo__boxTitle { background-color: #6CB70B; color: #ffffff; padding: 1rem; }
 
-.mobile-lotinfo__boxContent { background-color: #E2E2E2; padding: 1rem; }
+@media (max-width: 47.99em) { .mobile-lotinfo__boxTitle { font-size: 14px; } }
+
+.mobile-lotinfo__boxContent { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: #E2E2E2; padding: 1rem; height: 100%; }
+
+@media (max-width: 47.99em) { .mobile-lotinfo__boxContent { font-size: 14px; } }
+
+.querylist { background-image: url(../../img/bg/new-banner.png); background-position: center center; }
+
+.querylist__data .search__list { margin-left: 0; }
+
+.querylist__data .search__item { width: auto; padding: 16px 56px; }
+
+.querylist__content { background-color: #3B3B3B; padding: 30px 50px 60px; border-radius: 0 12px 12px 12px; margin-bottom: 50px; }
+
+.querylist__box:not(:last-child) { margin-bottom: 40px; }
+
+.querylist__inner { background-color: #ffffff; border-radius: 9px; padding: 36px 40px; font-size: 18px; }
+
+.querylist__inner1 { padding: 36px 104px; }
+
+.querylist__card { width: 600px; }
+
+.license__dataList { margin-left: 90px; }
+
+.license__dataItem:not(:last-child) { margin-bottom: 24px; }
+
+.landprice__item:not(:last-child) { margin-bottom: 8px; }
+
+.landprice__inner { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; text-align: center; margin-left: -8px; margin-bottom: -8px; }
+
+.landprice__inner1 { width: 16%; padding-left: 8px; padding-bottom: 8px; }
+
+.landprice__inner2 { width: 24%; padding-left: 8px; padding-bottom: 8px; }
+
+.landprice__inner3, .landprice__inner4 { width: 30%; padding-left: 8px; padding-bottom: 8px; }
+
+.landprice__box { background-color: #726A5B; color: #ffffff; padding: 1rem; }
+
+.landprice__boxInner { background-color: #AB8E58; }
+
+.resume__item:not(:last-child) { margin-bottom: 8px; }
+
+.resume__inner { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; text-align: center; margin-left: -8px; margin-bottom: -8px; }
+
+.resume__inner1 { width: 10%; padding-left: 8px; padding-bottom: 8px; }
+
+.resume__inner2 { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.resume__box { background-color: #726A5B; color: #ffffff; padding: 1rem; }
+
+.resume__boxInner { background-color: #E2E2E2; color: #726A5B; }
+
+.nearproject__form { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.nearproject__form .form__send { position: static; border-radius: 9px; font-size: 25px; height: auto; }
+
+.form__select1 { width: 20%; margin-right: 20px; }
+
+.form__select2 { width: 15%; margin-right: 20px; }
+
+.nearproject__content { margin-top: 80px; }
+
+.nearproject__item:not(:last-child) { margin-bottom: 20px; }
+
+.nearproject__link { display: block; color: #0094F6; -webkit-transition: all .3s; transition: all .3s; }
+
+.nearproject__link:hover { color: #255B8A; }
+
+.nearproject__box { background-color: #ffffff; border-radius: 9px; text-align: center; padding: 25px; font-size: 18px; font-weight: 700; }
+
+.environment__title { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border: 1px solid #ffffff; padding: 1rem; width: 275px; margin-bottom: 40px; }
+
+.environment__content { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.environment__line { position: absolute; top: 0; left: 50%; height: 100%; border: 2px solid #ffffff; }
+
+.environment__box { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.environment__item:not(:last-child) { margin-bottom: 64px; }
+
+.environment__boxTitle { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 10px; }
+
+.environment__boxTitle img { width: 30px; height: 30px; }
+
+.environment__inner { margin-left: 90px; font-size: 20px; color: #ffffff; }
+
+.estimate__title { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border: 1px solid #ffffff; padding: 1rem; width: 275px; margin-bottom: 40px; }
 
 .mt-0 { margin-top: 0; }
 

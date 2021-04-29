@@ -68,14 +68,18 @@
 // mobile-querylist__lotinfo
 
 .mobile-querylist__lotinfo {
-  @include mq($until:xl) {
-    display: block;
+  margin-bottom: 30px;
+  @include mq(xl) {
+    display: none;
   }
 }
 
 .mobile-lotinfo__item {
   border-radius: 5px;
   overflow: hidden;
+  &:not(:last-child) {
+    margin-bottom: 17px;
+  }
 }
 
 .mobile-lotinfo__address {
@@ -83,7 +87,9 @@
   color: $white;
   padding: 10px;
   border-radius: 7px;
-  margin-bottom: 8px;
+  @include mq($until:md) {
+    font-size: 14px;
+  }
 }
 
 .mobile-lotinfo__inner {
@@ -96,12 +102,291 @@
 
 .mobile-lotinfo__boxTitle {
   background-color: $green;
+  color: $white;
   padding: 1rem;
+  @include mq($until:md) {
+    font-size: 14px;
+  }
 }
 
 .mobile-lotinfo__boxContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
   background-color: $gray;
   padding: 1rem;
+  height: 100%;
+  @include mq($until:md) {
+    font-size: 14px;
+  }
 }
 
 // mobile-querylist__lotinfo end
+
+.querylist {
+  background-image: url(../../img/bg/new-banner.png);
+  background-position: center center;
+}
+
+.querylist__data {
+  .search__list {
+    margin-left: 0;
+  }
+  .search__item {
+    width: auto;
+    padding: 16px 56px;
+  }
+}
+
+.querylist__content {
+  background-color: $gray-300;
+  padding: 30px 50px 60px;
+  border-radius: 0 12px 12px 12px;
+  margin-bottom: 50px;
+  // display: none;
+  // &.is-active {
+  //   display: block;
+  // }
+}
+
+// basicdata
+
+.querylist__box {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.querylist__inner {
+  background-color: $white;
+  border-radius: 9px;
+  padding: 36px 40px;
+  font-size: 18px;
+}
+
+.querylist__inner1 {
+  padding: 36px 104px;
+}
+
+.querylist__card {
+  width: 600px;
+}
+
+.license__dataList {
+  margin-left: 90px;
+}
+
+.license__dataItem {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.landprice__item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.landprice__inner {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-left: -8px;
+  margin-bottom: -8px;
+}
+
+.landprice__inner1 {
+  width: 16%;
+  padding-left: 8px;
+  padding-bottom: 8px;
+}
+
+.landprice__inner2 {
+  width: 24%;
+  padding-left: 8px;
+  padding-bottom: 8px;
+}
+
+.landprice__inner3,.landprice__inner4 {
+  width: 30%;
+  padding-left: 8px;
+  padding-bottom: 8px;
+}
+
+.landprice__box {
+  background-color: $gray-200;
+  color: $white;
+  padding: 1rem;
+}
+
+.landprice__boxInner {
+  background-color: #AB8E58;
+}
+
+.resume__item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.resume__inner  {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-left: -8px;
+  margin-bottom: -8px;
+}
+
+.resume__inner1 {
+  width: 10%;
+  padding-left: 8px;
+  padding-bottom: 8px;
+}
+
+.resume__inner2 {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.resume__box {
+  background-color: $gray-200;
+  color: $white;
+  padding: 1rem;
+}
+
+.resume__boxInner {
+  background-color: $gray;
+  color: $gray-200;
+}
+
+// basicdata end
+
+// nearproject
+
+.nearproject__form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  .form__send {
+    position: static;
+    border-radius: 9px;
+    font-size: 25px;
+    height: auto;
+  }
+}
+
+.form__select1 {
+  width: 20%;
+  margin-right: 20px;
+}
+
+.form__select2 {
+  width: 15%;
+  margin-right: 20px;
+}
+
+.nearproject__content {
+  margin-top: 80px;
+}
+
+.nearproject__item {
+  &:not(:last-child) {
+  margin-bottom: 20px;  
+  }
+}
+
+.nearproject__link {
+  display: block;
+  color: $lightblue;
+  transition: all .3s;
+  &:hover {
+    color: $blue;
+  }
+}
+
+.nearproject__box {
+  background-color: $white;
+  border-radius: 9px;
+  text-align: center;
+  padding: 25px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+// nearproject end
+
+// environment
+
+.environment__title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $white;
+  padding: 1rem;
+  width: 275px;
+  margin-bottom: 40px;
+}
+
+.environment__content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.environment__line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  border: 2px solid $white;
+}
+
+.environment__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.environment__item {
+  &:not(:last-child) {
+    margin-bottom: 64px;
+  }
+}
+
+.environment__boxTitle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.environment__inner {
+  margin-left: 90px;
+  font-size: 20px;
+  color: $white;
+}
+
+// environment end
+
+// estimate
+
+.estimate__title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $white;
+  padding: 1rem;
+  width: 275px;
+  margin-bottom: 40px;
+}
+
+// estimate end
