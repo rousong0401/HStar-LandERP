@@ -345,16 +345,15 @@
   border: 2px solid $white;
 }
 
-.environment__box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .environment__item {
   &:not(:last-child) {
     margin-bottom: 64px;
   }
+}
+
+.environment__box {
+  width: 400px;
+  margin: 0 auto;
 }
 
 .environment__boxTitle {
