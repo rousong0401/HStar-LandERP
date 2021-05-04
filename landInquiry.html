@@ -786,489 +786,1130 @@
               <ul class="search__list flex flex-wrap">
                 <li class="search__item">基本資料</li>
                 <li class="search__item">鄰近建案</li>
-                <li class="search__item">週遭環境</li>
+                <li class="search__item">周遭環境</li>
                 <li class="search__item">地價估算(會員)</li>
               </ul>
               <div class="querylist__container">
-                <div class="querylist__content">
+
+                <!-- <div class="querylist__content">
                   <div class="basicdata">
-                    <div class="querylist__box">
-                      <div class="querylist__boxTitle flex flex-wrap items-center mb-2">
-                        <img src="img/icon/building.svg" alt="">
-                        <h3 class="font-bold text-white text-2xl ml-1">建物資料</h3>
-                      </div>
-                      <div class="querylist__inner">
-                        <div class="querylist__card">
-                          <div class="flex flex-wrap">
-                            <h4 class="font-bold mr-1 mb-1 mb-1">建號 :</h4>
-                            <p>[7026]科雅段192</p>
+                    <div class="hidden | xl:block">
+                      <div class="querylist__section">
+                        <div class="querylist__box">
+                          <div class="querylist__boxTitle flex flex-wrap items-center mb-2">
+                            <img src="img/icon/building.svg" alt="">
+                            <h3 class="font-bold text-white text-2xl ml-1">建物資料</h3>
                           </div>
-                          <div class="flex flex-wrap">
-                            <div class="w-1/2 flex flex-wrap">
-                              <h4 class="font-bold mr-1 mb-1">執照1 :</h4>
-                              <p>102中都使字第2125號</p>
-                            </div>
-                            <div class="w-1/2 flex flex-wrap">
-                              <h4 class="font-bold mr-1">發照日期 :</h4>
-                              <p>102年08月29日</p>
-                            </div>
-                          </div>
-                          <div class="license__data">
-                            <h4 class="font-bold">執照資料 :</h4>
-                            <ul class="license__dataList">
-                              <div class="license__dataItem">
-                                <p>基地面積 : 703.6㎡ ， 總樓地板面積 :1354.51㎡</p>
-                                <p>建築物高度 : 15.95ｍ</p>
-                                <p>地下避難面積 : 0㎡，法定空地面積 : 276.58㎡</p>
+                          <div class="querylist__inner">
+                            <div class="querylist__card">
+                              <div class="flex flex-wrap">
+                                <h4 class="font-bold mr-1 mb-1">建號 :</h4>
+                                <p>[7026]科雅段192</p>
                               </div>
-                              <div class="license__dataItem">
-                                <p>建造類別 : 新建 ， 構造別 : 鋼筋混凝土造</p>
-                                <p>建蔽率 : 34.06％ ， 容積率 : 219.78 ％</p>
-                                <p>地上層數 : 4層，地下層數 : 0層</p>
-                                <p>棟數 :7棟，戶數 : 7戶</p>
-                                <p>工程造價 : 26,734,000元</p>
-                              </div>
-                              <div class="license__dataItem">
-                                <p>起造人代表人 :慶山建設股份有限公司，負責人 : 陸游月紅</p>
-                                <p>設計人 : 王森主，監造人 : 陳俊宏</p>
-                                <p>承造人 : 慶碁營造股份有限公司</p>
-                                <p>發照日期 : 102年04月17日</p>
-                                <p>竣工日期 : 103年06月18日</p>
-                              </div>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="querylist__box">
-                      <div class="querylist__boxTitle flex flex-wrap items-center mb-2">
-                        <img src="img/icon/lot.svg" alt="">
-                        <h3 class="font-bold text-white text-2xl">地價資料</h3>
-                        <span class="text-white text-xl ml-1">(請先點選上方土地列表資料)</span>
-                      </div>
-                      <div class="querylist__inner querylist__inner1">
-                        <div class="landprice__list">
-                          <div class="landprice__item">
-                            <div class="landprice__inner">
-                              <div class="landprice__inner1">
-                                <div class="landprice__box">
-                                  <span>年期</span>
+                              <div class="flex flex-wrap">
+                                <div class="w-1/2 flex flex-wrap">
+                                  <h4 class="font-bold mr-1 mb-1">執照1 :</h4>
+                                  <p>102中都使字第2125號</p>
+                                </div>
+                                <div class="w-1/2 flex flex-wrap">
+                                  <h4 class="font-bold mr-1">發照日期 :</h4>
+                                  <p>102年08月29日</p>
                                 </div>
                               </div>
-                              <div class="landprice__inner2">
-                                <div class="landprice__box">
-                                  <span>公告現值</span>
-                                </div>
-                              </div>
-                              <div class="landprice__inner3">
-                                <div class="landprice__box">
-                                  <span>公告地價</span>
-                                </div>
-                              </div>
-                              <div class="landprice__inner4">
-                                <div class="landprice__box">
-                                  <span>面積</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="landprice__item">
-                            <div class="landprice__inner">
-                              <div class="landprice__inner1">
-                                <div class="landprice__box landprice__boxInner">
-                                  <span>10701</span>
-                                </div>
-                              </div>
-                              <div class="landprice__inner2">
-                                <div class="landprice__box landprice__boxInner">
-                                  <span>29500</span>
-                                </div>
-                              </div>
-                              <div class="landprice__inner3">
-                                <div class="landprice__box landprice__boxInner">
-                                  <span>3900</span>
-                                </div>
-                              </div>
-                              <div class="landprice__inner4">
-                                <div class="landprice__box landprice__boxInner">
-                                  <span>94.27</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="landprice__item">
-                            <div class="landprice__inner">
-                              <div class="landprice__inner1">
-                                <div class="landprice__box landprice__boxInner">
-                                  <span>10501</span>
-                                </div>
-                              </div>
-                              <div class="landprice__inner2">
-                                <div class="landprice__box landprice__boxInner">
-                                  <span>30000</span>
-                                </div>
-                              </div>
-                              <div class="landprice__inner3">
-                                <div class="landprice__box landprice__boxInner">
-                                  <span>4200</span>
-                                </div>
-                              </div>
-                              <div class="landprice__inner4">
-                                <div class="landprice__box landprice__boxInner">
-                                  <span>94.27</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="landprice__item">
-                            <div class="landprice__inner">
-                              <div class="landprice__inner1">
-                                <div class="landprice__box landprice__boxInner">
-                                  <span>10201</span>
-                                </div>
-                              </div>
-                              <div class="landprice__inner2">
-                                <div class="landprice__box landprice__boxInner">
-                                  <span>10000</span>
-                                </div>
-                              </div>
-                              <div class="landprice__inner3">
-                                <div class="landprice__box landprice__boxInner">
-                                  <span>1600</span>
-                                </div>
-                              </div>
-                              <div class="landprice__inner4">
-                                <div class="landprice__box landprice__boxInner">
-                                  <span>94.27</span>
-                                </div>
+                              <div class="license__data">
+                                <h4 class="font-bold">執照資料 :</h4>
+                                <ul class="license__dataList">
+                                  <div class="license__dataItem">
+                                    <p>基地面積 : 703.6㎡ ， 總樓地板面積 :1354.51㎡</p>
+                                    <p>建築物高度 : 15.95ｍ</p>
+                                    <p>地下避難面積 : 0㎡，法定空地面積 : 276.58㎡</p>
+                                  </div>
+                                  <div class="license__dataItem">
+                                    <p>建造類別 : 新建 ， 構造別 : 鋼筋混凝土造</p>
+                                    <p>建蔽率 : 34.06％ ， 容積率 : 219.78 ％</p>
+                                    <p>地上層數 : 4層，地下層數 : 0層</p>
+                                    <p>棟數 :7棟，戶數 : 7戶</p>
+                                    <p>工程造價 : 26,734,000元</p>
+                                  </div>
+                                  <div class="license__dataItem">
+                                    <p>起造人代表人 :慶山建設股份有限公司，負責人 : 陸游月紅</p>
+                                    <p>設計人 : 王森主，監造人 : 陳俊宏</p>
+                                    <p>承造人 : 慶碁營造股份有限公司</p>
+                                    <p>發照日期 : 102年04月17日</p>
+                                    <p>竣工日期 : 103年06月18日</p>
+                                  </div>
+                                </ul>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="querylist__box">
-                      <div class="querylist__boxTitle flex flex-wrap items-center mb-2">
-                        <img src="img/icon/resume.svg" alt="">
-                        <h3 class="font-bold text-white text-2xl ml-1">履歷資料</h3>
-                        <span class="text-white text-xl">(請先點選上方土地列表資料)</span>
-                      </div>
-                      <div class="querylist__inner querylist__inner1">
-                        <div class="resume__list">
-                          <div class="resume__item">
-                            <div class="resume__inner">
-                              <div class="resume__inner1">
-                                <div class="resume__box">
-                                  <span>日期</span>
+                        <div class="querylist__box">
+                          <div class="querylist__boxTitle flex flex-wrap items-center mb-2">
+                            <img src="img/icon/lot.svg" alt="">
+                            <h3 class="font-bold text-white text-2xl">地價資料</h3>
+                            <span class="text-white text-xl ml-1">(請先點選上方土地列表資料)</span>
+                          </div>
+                          <div class="querylist__inner querylist__inner1">
+                            <div class="landprice__list">
+                              <div class="landprice__item">
+                                <div class="landprice__inner">
+                                  <div class="landprice__inner1">
+                                    <div class="landprice__box">
+                                      <span>年期</span>
+                                    </div>
+                                  </div>
+                                  <div class="landprice__inner2">
+                                    <div class="landprice__box">
+                                      <span>公告現值</span>
+                                    </div>
+                                  </div>
+                                  <div class="landprice__inner3">
+                                    <div class="landprice__box">
+                                      <span>公告地價</span>
+                                    </div>
+                                  </div>
+                                  <div class="landprice__inner4">
+                                    <div class="landprice__box">
+                                      <span>面積</span>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
-                              <div class="resume__inner2">
-                                <div class="w-1/5 pl-2 pb-2">
-                                  <div class="resume__box">
+                              <div class="landprice__item">
+                                <div class="landprice__inner">
+                                  <div class="landprice__inner1">
+                                    <div class="landprice__box landprice__boxInner">
+                                      <span>10701</span>
+                                    </div>
+                                  </div>
+                                  <div class="landprice__inner2">
+                                    <div class="landprice__box landprice__boxInner">
+                                      <span>29500</span>
+                                    </div>
+                                  </div>
+                                  <div class="landprice__inner3">
+                                    <div class="landprice__box landprice__boxInner">
+                                      <span>3900</span>
+                                    </div>
+                                  </div>
+                                  <div class="landprice__inner4">
+                                    <div class="landprice__box landprice__boxInner">
+                                      <span>94.27</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="landprice__item">
+                                <div class="landprice__inner">
+                                  <div class="landprice__inner1">
+                                    <div class="landprice__box landprice__boxInner">
+                                      <span>10501</span>
+                                    </div>
+                                  </div>
+                                  <div class="landprice__inner2">
+                                    <div class="landprice__box landprice__boxInner">
+                                      <span>30000</span>
+                                    </div>
+                                  </div>
+                                  <div class="landprice__inner3">
+                                    <div class="landprice__box landprice__boxInner">
+                                      <span>4200</span>
+                                    </div>
+                                  </div>
+                                  <div class="landprice__inner4">
+                                    <div class="landprice__box landprice__boxInner">
+                                      <span>94.27</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="landprice__item">
+                                <div class="landprice__inner">
+                                  <div class="landprice__inner1">
+                                    <div class="landprice__box landprice__boxInner">
+                                      <span>10201</span>
+                                    </div>
+                                  </div>
+                                  <div class="landprice__inner2">
+                                    <div class="landprice__box landprice__boxInner">
+                                      <span>10000</span>
+                                    </div>
+                                  </div>
+                                  <div class="landprice__inner3">
+                                    <div class="landprice__box landprice__boxInner">
+                                      <span>1600</span>
+                                    </div>
+                                  </div>
+                                  <div class="landprice__inner4">
+                                    <div class="landprice__box landprice__boxInner">
+                                      <span>94.27</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="querylist__box">
+                          <div class="querylist__boxTitle flex flex-wrap items-center mb-2">
+                            <img src="img/icon/resume.svg" alt="">
+                            <h3 class="font-bold text-white text-2xl ml-1">履歷資料</h3>
+                            <span class="text-white text-xl">(請先點選上方土地列表資料)</span>
+                          </div>
+                          <div class="querylist__inner querylist__inner1">
+                            <div class="resume__list">
+                              <div class="resume__item">
+                                <div class="resume__inner">
+                                  <div class="resume__inner1">
+                                    <div class="resume__box">
+                                      <span>日期</span>
+                                    </div>
+                                  </div>
+                                  <div class="resume__inner2">
+                                    <div class="w-1/5 pl-2 pb-2">
+                                      <div class="resume__box">
+                                        <span>分割後(合併前)地段</span>
+                                      </div>
+                                    </div>
+                                    <div class="w-1/5 pl-2 pb-2">
+                                      <div class="resume__box">
+                                        <span>分割後(合併前)地號</span>
+                                      </div>
+                                    </div>
+                                    <div class="w-1/5 pl-2 pb-2">
+                                      <div class="resume__box">
+                                        <span>分割後(合併後)地段</span>
+                                      </div>
+                                    </div>
+                                    <div class="w-1/5 pl-2 pb-2">
+                                      <div class="resume__box">
+                                        <span>分割後(合併後)地號</span>
+                                      </div>
+                                    </div>
+                                    <div class="w-1/5 pl-2 pb-2">
+                                      <div class="resume__box">
+                                        <span>分割合併註記</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="resume__item">
+                                <div class="resume__inner">
+                                  <div class="resume__inner1">
+                                    <div class="resume__box resume__boxInner">
+                                      <span>1010601</span>
+                                    </div>
+                                  </div>
+                                  <div class="resume__inner2">
+                                    <div class="w-1/5 pl-2 pb-2">
+                                      <div class="resume__box resume__boxInner">
+                                        <span>1643-安林段</span>
+                                      </div>
+                                    </div>
+                                    <div class="w-1/5 pl-2 pb-2">
+                                      <div class="resume__box resume__boxInner">
+                                        <span>8370012</span>
+                                      </div>
+                                    </div>
+                                    <div class="w-1/5 pl-2 pb-2">
+                                      <div class="resume__box resume__boxInner">
+                                        <span>1643-安林段</span>
+                                      </div>
+                                    </div>
+                                    <div class="w-1/5 pl-2 pb-2">
+                                      <div class="resume__box resume__boxInner">
+                                        <span>8370000</span>
+                                      </div>
+                                    </div>
+                                    <div class="w-1/5 pl-2 pb-2">
+                                      <div class="resume__box resume__boxInner">
+                                        <span>S</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="xl:hidden">
+                      <div class="mobile-querylist__section">
+                        <div class="mobile-querylist__box">
+                          <h2 class="font-bold text-2xl text-white mb-6">基本資料</h2>
+                          <div class="mobile-querylist__boxTitle flex flex-wrap items-center mb-2">
+                            <img src="img/icon/building.svg" alt="">
+                            <h3 class="font-bold text-white text-lg ml-1">建物資料</h3>
+                          </div>
+                          <div class="mobile-querylist__inner">
+                            <div class="mobile-querylist__card">
+                              <div class="mb-2">
+                                <h4 class="font-bold">建號 :</h4>
+                                <p>[7026]科雅段192</p>
+                              </div>
+                              <div class="mb-2">
+                                <h4 class="font-bold">執照1 :</h4>
+                                <p>102中都使字第2125號</p>
+                                <h4 class="font-bold">發照日期 :</h4>
+                                <p>102年08月29日</p>
+                              </div>
+                              <div class="mobile-license__data">
+                                <h4 class="font-bold">執照資料 :</h4>
+                                <ul class="mobile-license__dataList">
+                                  <div class="mobile-license__dataItem">
+                                    <div class="mb-6">
+                                      <p>基地面積 : 703.6㎡</p>
+                                      <p>總樓地板面積 :1354.51㎡</p>
+                                    </div>
+                                    <div class="mb-6">
+                                      <p>建築物高度 : 15.95ｍ</p>
+                                    </div>
+                                    <p>地下避難面積 : 0㎡</p>
+                                    <p>法定空地面積 : 276.58㎡</p>
+                                  </div>
+                                  <div class="mobile-license__dataItem">
+                                    <div class="mb-6">
+                                      <p>建造類別 : 新建</p>
+                                      <p>構造別 : 鋼筋混凝土造</p>
+                                    </div>
+                                    <div class="mb-6">
+                                      <p>建蔽率 : 34.06％</p>
+                                      <p>容積率 : 219.78 ％</p>
+                                    </div>
+                                    <div class="mb-6">
+                                      <p>地上層數 : 4層，地下層數 : 0層</p>
+                                    </div>
+                                    <div class="mb-6">
+                                      <p>棟數 :7棟，戶數 : 7戶</p>
+                                    </div>
+                                    <p>工程造價 : 26,734,000元</p>
+                                  </div>
+                                  <div class="mobile-license__dataItem">
+                                    <div class="mb-6">
+                                      <p>起造人代表人 :慶山建設股份有限公司</p>
+                                      <p>負責人 : 陸游月紅</p>
+                                    </div>
+                                    <div class="mb-6">
+                                      <p>設計人 : 王森主，監造人 : 陳俊宏</p>
+                                    </div>
+                                    <div class="mb-6">
+                                      <p>承造人 : 慶碁營造股份有限公司</p>
+                                    </div>
+                                    <div class="mb-6">
+                                      <p>發照日期 : 102年04月17日</p>
+                                    </div>
+                                    <p>竣工日期 : 103年06月18日</p>
+                                  </div>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mobile-querylist__box">
+                          <div class="mobile-querylist__boxTitle mb-2">
+                            <div class="flex flex-wrap items-center">
+                              <img src="img/icon/lot.svg" alt="">
+                              <h3 class="font-bold text-white text-lg ml-1">地價資料</h3>
+                            </div>
+                            <span class="text-white ml-1">(請先點選上方土地列表資料)</span>
+                          </div>
+                          <div class="mobile-landprice__list">
+                            <div class="mobile-landprice__item">
+                              <div class="mobile-landprice__inner">
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxTitle">
+                                    <span>年期</span>
+                                  </div>
+                                </div>
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxContent">
+                                    <span>10701</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-landprice__inner">
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxTitle">
+                                    <span>公告現值</span>
+                                  </div>
+                                </div>
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxContent">
+                                    <span>29500</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-landprice__inner">
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxTitle">
+                                    <span>公告地價</span>
+                                  </div>
+                                </div>
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxContent">
+                                    <span>3900</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-landprice__inner">
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxTitle">
+                                    <span>地號</span>
+                                  </div>
+                                </div>
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxContent">
+                                    <span>539</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-landprice__inner">
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxTitle">
+                                    <span>面積</span>
+                                  </div>
+                                </div>
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxContent">
+                                    <span>94.27</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mobile-landprice__item">
+                              <div class="mobile-landprice__inner">
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxTitle">
+                                    <span>年期</span>
+                                  </div>
+                                </div>
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxContent">
+                                    <span>10501</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-landprice__inner">
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxTitle">
+                                    <span>公告現值</span>
+                                  </div>
+                                </div>
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxContent">
+                                    <span>29500</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-landprice__inner">
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxTitle">
+                                    <span>公告地價</span>
+                                  </div>
+                                </div>
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxContent">
+                                    <span>3900</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-landprice__inner">
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxTitle">
+                                    <span>地號</span>
+                                  </div>
+                                </div>
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxContent">
+                                    <span>539</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-landprice__inner">
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxTitle">
+                                    <span>面積</span>
+                                  </div>
+                                </div>
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxContent">
+                                    <span>94.27</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mobile-landprice__item">
+                              <div class="mobile-landprice__inner">
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxTitle">
+                                    <span>年期</span>
+                                  </div>
+                                </div>
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxContent">
+                                    <span>10501</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-landprice__inner">
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxTitle">
+                                    <span>公告現值</span>
+                                  </div>
+                                </div>
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxContent">
+                                    <span>29500</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-landprice__inner">
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxTitle">
+                                    <span>公告地價</span>
+                                  </div>
+                                </div>
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxContent">
+                                    <span>3900</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-landprice__inner">
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxTitle">
+                                    <span>地號</span>
+                                  </div>
+                                </div>
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxContent">
+                                    <span>539</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-landprice__inner">
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxTitle">
+                                    <span>面積</span>
+                                  </div>
+                                </div>
+                                <div class="w-1/2">
+                                  <div class="mobile-landprice__boxContent">
+                                    <span>94.27</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mobile-querylist__box">
+                          <div class="mobile-querylist__boxTitle mb-2">
+                            <div class="flex flex-wrap items-center">
+                              <img src="img/icon/resume.svg" alt="">
+                              <h3 class="font-bold text-white text-lg ml-1">履歷資料</h3>
+                            </div>
+                            <span class="text-white ml-1">(請先點選上方土地列表資料)</span>
+                          </div>
+                          <div class="mobile-resume__list">
+                            <div class="mobile-resume__item">
+                              <div class="mobile-resume__inner">
+                                <div class="w-3/5">
+                                  <div class="mobile-resume__boxTitle">
+                                    <span>日期</span>
+                                  </div>
+                                </div>
+                                <div class="w-2/5">
+                                  <div class="mobile-resume__boxContent">
+                                    <span>10701</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-resume__inner">
+                                <div class="w-3/5">
+                                  <div class="mobile-resume__boxTitle">
                                     <span>分割後(合併前)地段</span>
                                   </div>
                                 </div>
-                                <div class="w-1/5 pl-2 pb-2">
-                                  <div class="resume__box">
+                                <div class="w-2/5">
+                                  <div class="mobile-resume__boxContent">
+                                    <span>1643-安林段</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-resume__inner">
+                                <div class="w-3/5">
+                                  <div class="mobile-resume__boxTitle">
                                     <span>分割後(合併前)地號</span>
                                   </div>
                                 </div>
-                                <div class="w-1/5 pl-2 pb-2">
-                                  <div class="resume__box">
-                                    <span>分割後(合併後)地段</span>
-                                  </div>
-                                </div>
-                                <div class="w-1/5 pl-2 pb-2">
-                                  <div class="resume__box">
-                                    <span>分割後(合併後)地號</span>
-                                  </div>
-                                </div>
-                                <div class="w-1/5 pl-2 pb-2">
-                                  <div class="resume__box">
-                                    <span>分割合併註記</span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="resume__item">
-                            <div class="resume__inner">
-                              <div class="resume__inner1">
-                                <div class="resume__box resume__boxInner">
-                                  <span>1010601</span>
-                                </div>
-                              </div>
-                              <div class="resume__inner2">
-                                <div class="w-1/5 pl-2 pb-2">
-                                  <div class="resume__box resume__boxInner">
-                                    <span>1643-安林段</span>
-                                  </div>
-                                </div>
-                                <div class="w-1/5 pl-2 pb-2">
-                                  <div class="resume__box resume__boxInner">
+                                <div class="w-2/5">
+                                  <div class="mobile-resume__boxContent">
                                     <span>8370012</span>
                                   </div>
                                 </div>
-                                <div class="w-1/5 pl-2 pb-2">
-                                  <div class="resume__box resume__boxInner">
+                              </div>
+                              <div class="mobile-resume__inner">
+                                <div class="w-3/5">
+                                  <div class="mobile-resume__boxTitle">
+                                    <span>分割前(合併後)地段</span>
+                                  </div>
+                                </div>
+                                <div class="w-2/5">
+                                  <div class="mobile-resume__boxContent">
                                     <span>1643-安林段</span>
                                   </div>
                                 </div>
-                                <div class="w-1/5 pl-2 pb-2">
-                                  <div class="resume__box resume__boxInner">
+                              </div>
+                              <div class="mobile-resume__inner">
+                                <div class="w-3/5">
+                                  <div class="mobile-resume__boxTitle">
+                                    <span>分割前(合併後)地號</span>
+                                  </div>
+                                </div>
+                                <div class="w-2/5">
+                                  <div class="mobile-resume__boxContent">
                                     <span>8370000</span>
                                   </div>
                                 </div>
-                                <div class="w-1/5 pl-2 pb-2">
-                                  <div class="resume__box resume__boxInner">
+                              </div>
+                              <div class="mobile-resume__inner">
+                                <div class="w-3/5">
+                                  <div class="mobile-resume__boxTitle">
+                                    <span>分割合併註記</span>
+                                  </div>
+                                </div>
+                                <div class="w-2/5">
+                                  <div class="mobile-resume__boxContent">
                                     <span>S</span>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
 
                 <div class="querylist__content">
                   <div class="nearproject">
-                    <form class="form" action="">
-                      <div class="nearproject__form">
-                        <div class="form__select form__select1">
-                          <select class="form__control" name="" id="">
-                            <option value="距離1公里之內建案">距離1公里之內建案</option>
-                          </select>
+                    <div class="hidden | xl:block">
+                      <div class="querylist__section">
+                        <form class="form" action="">
+                          <div class="nearproject__form">
+                            <div class="form__select form__select1">
+                              <select class="form__control" name="" id="">
+                                <option value="距離1公里之內建案">距離1公里之內建案</option>
+                              </select>
+                            </div>
+                            <div class="form__select form__select2">
+                              <select class="form__control" name="" id="">
+                                <option value="距離1公里之內建案">一年內</option>
+                              </select>
+                            </div>
+                            <a class="form__send" href="javascript:;">查詢</a>
+                          </div>
+                        </form>
+                        <div class="nearproject__content">
+                          <div class="nearproject__list">
+                            <div class="nearproject__item">
+                              <div class="nearproject__boxTitle flex flex-wrap items-center -ml-5">
+                                <div class="w-1/4 pl-5">
+                                  <div class="flex flex-wrap items-center justify-center">
+                                    <img src="img/icon/building.svg" alt="">
+                                    <h3 class="font-bold text-white text-2xl ml-1">地段地號</h3>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5">
+                                  <div class="flex flex-wrap items-center justify-center">
+                                    <img src="img/icon/resume.svg" alt="">
+                                    <h3 class="font-bold text-white text-2xl ml-1">執照號碼</h3>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5">
+                                  <div class="flex flex-wrap items-center justify-center">
+                                    <img src="img/icon/time.svg" alt="">
+                                    <h3 class="font-bold text-white text-2xl ml-1">發照日期</h3>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5">
+                                  <div class="flex flex-wrap items-center justify-center">
+                                    <img src="img/icon/distance.svg" alt="">
+                                    <h3 class="font-bold text-white text-2xl ml-1">距離</h3>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="nearproject__item">
+                              <div class="nearproject__inner flex flex-wrap items-center -ml-5 -mb-5">
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box1">
+                                    <a class="nearproject__link" href="javascript:;">西屯區安林段837-12地號</a>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>102中都使字第2125號</p>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>102年08月29日</p>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>321M</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="nearproject__item">
+                              <div class="nearproject__inner flex flex-wrap items-center -ml-5 -mb-5">
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box1">
+                                    <a class="nearproject__link" href="javascript:;">西屯區安林段837-12地號</a>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>102中都使字第2125號</p>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>102年08月29日</p>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>321M</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="nearproject__item">
+                              <div class="nearproject__inner flex flex-wrap items-center -ml-5 -mb-5">
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box1">
+                                    <a class="nearproject__link" href="javascript:;">西屯區安林段837-12地號</a>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>102中都使字第2125號</p>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>102年08月29日</p>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>321M</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="nearproject__item">
+                              <div class="nearproject__inner flex flex-wrap items-center -ml-5 -mb-5">
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box1">
+                                    <a class="nearproject__link" href="javascript:;">西屯區安林段837-12地號</a>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>102中都使字第2125號</p>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>102年08月29日</p>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>321M</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="nearproject__item">
+                              <div class="nearproject__inner flex flex-wrap items-center -ml-5 -mb-5">
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box1">
+                                    <a class="nearproject__link" href="javascript:;">西屯區安林段837-12地號</a>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>102中都使字第2125號</p>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>102年08月29日</p>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>321M</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="nearproject__item">
+                              <div class="nearproject__inner flex flex-wrap items-center -ml-5 -mb-5">
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box1">
+                                    <a class="nearproject__link" href="javascript:;">西屯區安林段837-12地號</a>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>102中都使字第2125號</p>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>102年08月29日</p>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>321M</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="nearproject__item">
+                              <div class="nearproject__inner flex flex-wrap items-center -ml-5 -mb-5">
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box1">
+                                    <a class="nearproject__link" href="javascript:;">西屯區安林段837-12地號</a>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>102中都使字第2125號</p>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>102年08月29日</p>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>321M</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="nearproject__item">
+                              <div class="nearproject__inner flex flex-wrap items-center -ml-5 -mb-5">
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box1">
+                                    <a class="nearproject__link" href="javascript:;">西屯區安林段837-12地號</a>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>102中都使字第2125號</p>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>102年08月29日</p>
+                                  </div>
+                                </div>
+                                <div class="w-1/4 pl-5 pb-5">
+                                  <div class="nearproject__box">
+                                    <p>321M</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="form__select form__select2">
-                          <select class="form__control" name="" id="">
-                            <option value="距離1公里之內建案">一年內</option>
-                          </select>
-                        </div>
-                        <a class="form__send" href="javascript:;">查詢</a>
                       </div>
-                    </form>
-                    <div class="nearproject__content">
-                      <div class="nearproject__list">
-                        <div class="nearproject__item">
-                          <div class="nearproject__boxTitle flex flex-wrap items-center -ml-5">
-                            <div class="w-1/4 pl-5">
-                              <div class="flex flex-wrap items-center justify-center">
-                                <img src="img/icon/building.svg" alt="">
-                                <h3 class="font-bold text-white text-2xl ml-1">地段地號</h3>
+                    </div>
+                    <div class="xl:hidden">
+                      <div class="mobile-querylist__section">
+                        <div class="mobile-nearproject__title">
+                          <h2 class="font-bold text-2xl text-white mb-6">鄰近建案</h2>
+                          <form class="form" action="">
+                            <div class="mobile-nearproject__form">
+                              <div class="form__select mb-2 | md:mb-3">
+                                <select class="form__control" name="" id="">
+                                  <option value="距離1公里之內建案">距離1公里之內建案</option>
+                                </select>
                               </div>
-                            </div>
-                            <div class="w-1/4 pl-5">
-                              <div class="flex flex-wrap items-center justify-center">
-                                <img src="img/icon/resume.svg" alt="">
-                                <h3 class="font-bold text-white text-2xl ml-1">執照號碼</h3>
+                              <div class="form__select mb-2 | md:mb-3">
+                                <select class="form__control" name="" id="">
+                                  <option value="距離1公里之內建案">一年內</option>
+                                </select>
                               </div>
+                              <a class="mobile-form__send" href="javascript:;">查詢</a>
                             </div>
-                            <div class="w-1/4 pl-5">
-                              <div class="flex flex-wrap items-center justify-center">
-                                <img src="img/icon/time.svg" alt="">
-                                <h3 class="font-bold text-white text-2xl ml-1">發照日期</h3>
-                              </div>
-                            </div>
-                            <div class="w-1/4 pl-5">
-                              <div class="flex flex-wrap items-center justify-center">
-                                <img src="img/icon/distance.svg" alt="">
-                                <h3 class="font-bold text-white text-2xl ml-1">距離</h3>
-                              </div>
-                            </div>
-                          </div>
+                          </form>
                         </div>
-                        <div class="nearproject__item">
-                          <div class="nearproject__inner flex flex-wrap items-center -ml-5 -mb-5">
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <a class="nearproject__link" href="javascript:;">西屯區安林段837-12地號</a>
+                        <div class="mobile-nearproject__content">
+                          <div class="mobile-nearproject__list">
+                            <div class="mobile-nearproject__item">
+                              <div class="mobile-nearproject__inner">
+                                <div class="w-2/5">
+                                  <div class="mobile-nearproject__boxTitle">
+                                    <span>地段地號</span>
+                                  </div>
+                                </div>
+                                <div class="w-3/5">
+                                  <div class="mobile-nearproject__boxContent1">
+                                    <a class="mobile-nearproject__link" href="javascript:;">西屯區安林段837-12地號</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-nearproject__inner">
+                                <div class="w-2/5">
+                                  <div class="mobile-nearproject__boxTitle">
+                                    <span>執照號碼</span>
+                                  </div>
+                                </div>
+                                <div class="w-3/5">
+                                  <div class="mobile-nearproject__boxContent">
+                                    <span>102中都使字第2125號</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-nearproject__inner">
+                                <div class="w-2/5">
+                                  <div class="mobile-nearproject__boxTitle">
+                                    <span>發票日期</span>
+                                  </div>
+                                </div>
+                                <div class="w-3/5">
+                                  <div class="mobile-nearproject__boxContent">
+                                    <span>102年08月29日</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-nearproject__inner">
+                                <div class="w-2/5">
+                                  <div class="mobile-nearproject__boxTitle">
+                                    <span>距離</span>
+                                  </div>
+                                </div>
+                                <div class="w-3/5">
+                                  <div class="mobile-nearproject__boxContent">
+                                    <span>321M</span>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>102中都使字第2125號</p>
+                            <div class="mobile-nearproject__item">
+                              <div class="mobile-nearproject__inner">
+                                <div class="w-2/5">
+                                  <div class="mobile-nearproject__boxTitle">
+                                    <span>地段地號</span>
+                                  </div>
+                                </div>
+                                <div class="w-3/5">
+                                  <div class="mobile-nearproject__boxContent1">
+                                    <a class="mobile-nearproject__link" href="javascript:;">西屯區安林段837-12地號</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-nearproject__inner">
+                                <div class="w-2/5">
+                                  <div class="mobile-nearproject__boxTitle">
+                                    <span>執照號碼</span>
+                                  </div>
+                                </div>
+                                <div class="w-3/5">
+                                  <div class="mobile-nearproject__boxContent">
+                                    <span>102中都使字第2125號</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-nearproject__inner">
+                                <div class="w-2/5">
+                                  <div class="mobile-nearproject__boxTitle">
+                                    <span>發票日期</span>
+                                  </div>
+                                </div>
+                                <div class="w-3/5">
+                                  <div class="mobile-nearproject__boxContent">
+                                    <span>102年08月29日</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-nearproject__inner">
+                                <div class="w-2/5">
+                                  <div class="mobile-nearproject__boxTitle">
+                                    <span>距離</span>
+                                  </div>
+                                </div>
+                                <div class="w-3/5">
+                                  <div class="mobile-nearproject__boxContent">
+                                    <span>321M</span>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>102年08月29日</p>
+                            <div class="mobile-nearproject__item">
+                              <div class="mobile-nearproject__inner">
+                                <div class="w-2/5">
+                                  <div class="mobile-nearproject__boxTitle">
+                                    <span>地段地號</span>
+                                  </div>
+                                </div>
+                                <div class="w-3/5">
+                                  <div class="mobile-nearproject__boxContent1">
+                                    <a class="mobile-nearproject__link" href="javascript:;">西屯區安林段837-12地號</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-nearproject__inner">
+                                <div class="w-2/5">
+                                  <div class="mobile-nearproject__boxTitle">
+                                    <span>執照號碼</span>
+                                  </div>
+                                </div>
+                                <div class="w-3/5">
+                                  <div class="mobile-nearproject__boxContent">
+                                    <span>102中都使字第2125號</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-nearproject__inner">
+                                <div class="w-2/5">
+                                  <div class="mobile-nearproject__boxTitle">
+                                    <span>發票日期</span>
+                                  </div>
+                                </div>
+                                <div class="w-3/5">
+                                  <div class="mobile-nearproject__boxContent">
+                                    <span>102年08月29日</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-nearproject__inner">
+                                <div class="w-2/5">
+                                  <div class="mobile-nearproject__boxTitle">
+                                    <span>距離</span>
+                                  </div>
+                                </div>
+                                <div class="w-3/5">
+                                  <div class="mobile-nearproject__boxContent">
+                                    <span>321M</span>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>321M</p>
+                            <div class="mobile-nearproject__item">
+                              <div class="mobile-nearproject__inner">
+                                <div class="w-2/5">
+                                  <div class="mobile-nearproject__boxTitle">
+                                    <span>地段地號</span>
+                                  </div>
+                                </div>
+                                <div class="w-3/5">
+                                  <div class="mobile-nearproject__boxContent1">
+                                    <a class="mobile-nearproject__link" href="javascript:;">西屯區安林段837-12地號</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-nearproject__inner">
+                                <div class="w-2/5">
+                                  <div class="mobile-nearproject__boxTitle">
+                                    <span>執照號碼</span>
+                                  </div>
+                                </div>
+                                <div class="w-3/5">
+                                  <div class="mobile-nearproject__boxContent">
+                                    <span>102中都使字第2125號</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-nearproject__inner">
+                                <div class="w-2/5">
+                                  <div class="mobile-nearproject__boxTitle">
+                                    <span>發票日期</span>
+                                  </div>
+                                </div>
+                                <div class="w-3/5">
+                                  <div class="mobile-nearproject__boxContent">
+                                    <span>102年08月29日</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mobile-nearproject__inner">
+                                <div class="w-2/5">
+                                  <div class="mobile-nearproject__boxTitle">
+                                    <span>距離</span>
+                                  </div>
+                                </div>
+                                <div class="w-3/5">
+                                  <div class="mobile-nearproject__boxContent">
+                                    <span>321M</span>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                        <div class="nearproject__item">
-                          <div class="nearproject__inner flex flex-wrap items-center -ml-5 -mb-5">
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <a class="nearproject__link" href="javascript:;">西屯區安林段837-12地號</a>
+                            <div class="mobile-nearproject__item">
+                              <div class="mobile-nearproject__inner">
+                                <div class="w-2/5">
+                                  <div class="mobile-nearproject__boxTitle">
+                                    <span>地段地號</span>
+                                  </div>
+                                </div>
+                                <div class="w-3/5">
+                                  <div class="mobile-nearproject__boxContent1">
+                                    <a class="mobile-nearproject__link" href="javascript:;">西屯區安林段837-12地號</a>
+                                  </div>
+                                </div>
                               </div>
-                            </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>102中都使字第2125號</p>
+                              <div class="mobile-nearproject__inner">
+                                <div class="w-2/5">
+                                  <div class="mobile-nearproject__boxTitle">
+                                    <span>執照號碼</span>
+                                  </div>
+                                </div>
+                                <div class="w-3/5">
+                                  <div class="mobile-nearproject__boxContent">
+                                    <span>102中都使字第2125號</span>
+                                  </div>
+                                </div>
                               </div>
-                            </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>102年08月29日</p>
+                              <div class="mobile-nearproject__inner">
+                                <div class="w-2/5">
+                                  <div class="mobile-nearproject__boxTitle">
+                                    <span>發票日期</span>
+                                  </div>
+                                </div>
+                                <div class="w-3/5">
+                                  <div class="mobile-nearproject__boxContent">
+                                    <span>102年08月29日</span>
+                                  </div>
+                                </div>
                               </div>
-                            </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>321M</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="nearproject__item">
-                          <div class="nearproject__inner flex flex-wrap items-center -ml-5 -mb-5">
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <a class="nearproject__link" href="javascript:;">西屯區安林段837-12地號</a>
-                              </div>
-                            </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>102中都使字第2125號</p>
-                              </div>
-                            </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>102年08月29日</p>
-                              </div>
-                            </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>321M</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="nearproject__item">
-                          <div class="nearproject__inner flex flex-wrap items-center -ml-5 -mb-5">
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <a class="nearproject__link" href="javascript:;">西屯區安林段837-12地號</a>
-                              </div>
-                            </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>102中都使字第2125號</p>
-                              </div>
-                            </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>102年08月29日</p>
-                              </div>
-                            </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>321M</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="nearproject__item">
-                          <div class="nearproject__inner flex flex-wrap items-center -ml-5 -mb-5">
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <a class="nearproject__link" href="javascript:;">西屯區安林段837-12地號</a>
-                              </div>
-                            </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>102中都使字第2125號</p>
-                              </div>
-                            </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>102年08月29日</p>
-                              </div>
-                            </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>321M</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="nearproject__item">
-                          <div class="nearproject__inner flex flex-wrap items-center -ml-5 -mb-5">
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <a class="nearproject__link" href="javascript:;">西屯區安林段837-12地號</a>
-                              </div>
-                            </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>102中都使字第2125號</p>
-                              </div>
-                            </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>102年08月29日</p>
-                              </div>
-                            </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>321M</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="nearproject__item">
-                          <div class="nearproject__inner flex flex-wrap items-center -ml-5 -mb-5">
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <a class="nearproject__link" href="javascript:;">西屯區安林段837-12地號</a>
-                              </div>
-                            </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>102中都使字第2125號</p>
-                              </div>
-                            </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>102年08月29日</p>
-                              </div>
-                            </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>321M</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="nearproject__item">
-                          <div class="nearproject__inner flex flex-wrap items-center -ml-5 -mb-5">
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <a class="nearproject__link" href="javascript:;">西屯區安林段837-12地號</a>
-                              </div>
-                            </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>102中都使字第2125號</p>
-                              </div>
-                            </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>102年08月29日</p>
-                              </div>
-                            </div>
-                            <div class="w-1/4 pl-5 pb-5">
-                              <div class="nearproject__box">
-                                <p>321M</p>
+                              <div class="mobile-nearproject__inner">
+                                <div class="w-2/5">
+                                  <div class="mobile-nearproject__boxTitle">
+                                    <span>距離</span>
+                                  </div>
+                                </div>
+                                <div class="w-3/5">
+                                  <div class="mobile-nearproject__boxContent">
+                                    <span>321M</span>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -1280,101 +1921,598 @@
 
                 <div class="querylist__content">
                   <div class="environment">
-                    <div class="environment__title">
-                      <img src="img/icon/location.svg" alt="">
-                      <h3 class="font-bold text-white text-2xl ml-1">1公里內鄰近機能</h3>
+                    <div class="hidden | xl:block">
+                      <div class="querylist__section">
+                        <div class="environment__title">
+                          <img src="img/icon/location.svg" alt="">
+                          <h3 class="font-bold text-white text-2xl ml-1">1公里內鄰近機能</h3>
+                        </div>
+                        <div class="environment__content">
+                          <div class="w-1/2">
+                            <div class="environment__box">
+                              <div class="environment__list">
+                                <div class="environment__item">
+                                  <div class="environment__boxTitle">
+                                    <img src="img/icon/park.svg" alt="">
+                                    <h3 class="font-bold text-lightorange text-2xl mx-3">公園綠地</h3>
+                                    <h3 class="font-bold text-lightorange text-2xl">共3個</h3>
+                                  </div>
+                                  <div class="environment__inner">
+                                    <p>中正亭 ，距離770公尺</p>
+                                    <p>寶貝魚 ， 距離770公尺</p>
+                                    <p>啟成公紀念公園 ， 距離770公尺</p>
+                                  </div>
+                                </div>
+                                <div class="environment__item">
+                                  <div class="environment__boxTitle">
+                                    <img src="img/icon/restaurant.svg" alt="">
+                                    <h3 class="font-bold text-lightorange text-2xl mx-3">美食餐廳</h3>
+                                    <h3 class="font-bold text-lightorange text-2xl">共4個</h3>
+                                  </div>
+                                  <div class="environment__inner">
+                                    <p>中正亭 ，距離770公尺</p>
+                                    <p>寶貝魚 ， 距離770公尺</p>
+                                    <p>啟成公紀念公園 ， 距離770公尺</p>
+                                  </div>
+                                </div>
+                                <div class="environment__item">
+                                  <div class="environment__boxTitle">
+                                    <img src="img/icon/park.svg" alt="">
+                                    <h3 class="font-bold text-lightorange text-2xl mx-3">教育機構</h3>
+                                    <h3 class="font-bold text-lightorange text-2xl">共6個</h3>
+                                  </div>
+                                  <div class="environment__inner">
+                                    <p>XX大學 ， 距離963公尺</p>
+                                    <p>XX高中 ， 距離963公尺</p>
+                                    <p>XX國中 ， 距離963公尺</p>
+                                    <p>XX國小 ， 距離963公尺</p>
+                                    <p>XX國小 ， 距離963公尺</p>
+                                    <p>私立一心園幼兒園，距離963公尺</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="w-1/2">
+                            <div class="environment__box">
+                              <div class="environment__list">
+                                <div class="environment__item">
+                                  <div class="environment__boxTitle">
+                                    <img src="img/icon/shopping-cart.svg" alt="">
+                                    <h3 class="font-bold text-lightorange text-2xl mx-3">便利超商</h3>
+                                    <h3 class="font-bold text-lightorange text-2xl">共3個</h3>
+                                  </div>
+                                  <div class="environment__inner">
+                                    <p>全家 ，距離770公尺</p>
+                                    <p>7-11 ， 距離770公尺</p>
+                                    <p>萊爾富 ， 距離770公尺</p>
+                                  </div>
+                                </div>
+                                <div class="environment__item">
+                                  <div class="environment__boxTitle">
+                                    <img src="img/icon/car.svg" alt="">
+                                    <h3 class="font-bold text-lightorange text-2xl mx-3">公共運輸</h3>
+                                    <h3 class="font-bold text-lightorange text-2xl">共3個</h3>
+                                  </div>
+                                  <div class="environment__inner">
+                                    <p>古亭捷運 ，距離770公尺</p>
+                                    <p>公車客運 ， 距離770公尺</p>
+                                    <p>UBIKE ， 距離770公尺</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="environment__line"></div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="environment__content">
-                      <div class="w-1/2">
-                        <div class="environment__box">
-                          <div class="environment__list">
-                            <div class="environment__item">
-                              <div class="environment__boxTitle">
+                    <div class="xl:hidden">
+                      <div class="mobile-querylist__section">
+                        <h2 class="font-bold text-2xl text-white mb-6">周遭環境</h2>
+                        <div class="mobile-environment__title">
+                          <img src="img/icon/location.svg" alt="">
+                          <h3 class="font-bold text-white ml-1">1公里內鄰近機能</h3>
+                        </div>
+                        <div class="mobile-environment__content">
+                          <div class="mobile-environment__list">
+                            <div class="mobile-environment__item">
+                              <div class="mobile-environment__boxTitle">
                                 <img src="img/icon/park.svg" alt="">
-                                <h3 class="font-bold text-lightorange text-2xl mx-3">公園綠地</h3>
-                                <h3 class="font-bold text-lightorange text-2xl">共3個</h3>
+                                <h3 class="font-bold text-lightorange mx-2">公園綠地</h3>
+                                <h3 class="font-bold text-lightorange">共3個</h3>
                               </div>
-                              <div class="environment__inner">
+                              <div class="mobile-environment__inner">
                                 <p>中正亭 ，距離770公尺</p>
                                 <p>寶貝魚 ， 距離770公尺</p>
                                 <p>啟成公紀念公園 ， 距離770公尺</p>
                               </div>
                             </div>
-                            <div class="environment__item">
-                              <div class="environment__boxTitle">
-                                <img src="img/icon/restaurant.svg" alt="">
-                                <h3 class="font-bold text-lightorange text-2xl mx-3">美食餐廳</h3>
-                                <h3 class="font-bold text-lightorange text-2xl">共4個</h3>
-                              </div>
-                              <div class="environment__inner">
-                                <p>中正亭 ，距離770公尺</p>
-                                <p>寶貝魚 ， 距離770公尺</p>
-                                <p>啟成公紀念公園 ， 距離770公尺</p>
-                              </div>
-                            </div>
-                            <div class="environment__item">
-                              <div class="environment__boxTitle">
-                                <img src="img/icon/park.svg" alt="">
-                                <h3 class="font-bold text-lightorange text-2xl mx-3">教育機構</h3>
-                                <h3 class="font-bold text-lightorange text-2xl">共6個</h3>
-                              </div>
-                              <div class="environment__inner">
-                                <p>XX大學 ， 距離963公尺</p>
-                                <p>XX高中 ， 距離963公尺</p>
-                                <p>XX國中 ， 距離963公尺</p>
-                                <p>XX國小 ， 距離963公尺</p>
-                                <p>XX國小 ， 距離963公尺</p>
-                                <p>私立一心園幼兒園，距離963公尺</p>
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
-                      <div class="w-1/2">
-                        <div class="environment__box">
-                          <div class="environment__list">
-                            <div class="environment__item">
-                              <div class="environment__boxTitle">
-                                <img src="img/icon/shopping-cart.svg" alt="">
-                                <h3 class="font-bold text-lightorange text-2xl mx-3">便利超商</h3>
-                                <h3 class="font-bold text-lightorange text-2xl">共3個</h3>
-                              </div>
-                              <div class="environment__inner">
-                                <p>全家 ，距離770公尺</p>
-                                <p>7-11 ， 距離770公尺</p>
-                                <p>萊爾富 ， 距離770公尺</p>
-                              </div>
-                            </div>
-                            <div class="environment__item">
-                              <div class="environment__boxTitle">
-                                <img src="img/icon/car.svg" alt="">
-                                <h3 class="font-bold text-lightorange text-2xl mx-3">公共運輸</h3>
-                                <h3 class="font-bold text-lightorange text-2xl">共3個</h3>
-                              </div>
-                              <div class="environment__inner">
-                                <p>古亭捷運 ，距離770公尺</p>
-                                <p>公車客運 ， 距離770公尺</p>
-                                <p>UBIKE ， 距離770公尺</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="environment__line"></div>
                     </div>
                   </div>
                 </div>
 
                 <div class="querylist__content">
                   <div class="estimate">
-                    <div class="estimate__title">
-                      <img src="img/icon/price-tag.svg" alt="">
-                      <h3 class="font-bold text-white text-2xl ml-1">歷史標售價格</h3>
+                    <div class="querylist__section mb-4">
+                      <div class="estimate__title">
+                        <img src="img/icon/price-tag.svg" alt="">
+                        <h3 class="font-bold text-white text-2xl ml-2">歷史標售價格</h3>
+                      </div>
+                      <div class="estimate__content">
+                        <div class="wrap__tiny">
+                          <div class="estimate__list">
+                            <div class="estimate__item">
+                              <div class="estimate__inner">
+                                <div class="estimate__inner1">
+                                  <div class="estimate__box">
+                                    <span>年期</span>
+                                  </div>
+                                </div>
+                                <div class="estimate__inner2">
+                                  <div class="w-1/5 pl-2 pb-2">
+                                    <div class="estimate__box">
+                                      <span>公告現值</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/5 pl-2 pb-2">
+                                    <div class="estimate__box">
+                                      <span>公告地價</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/5 pl-2 pb-2">
+                                    <div class="estimate__box">
+                                      <span>實價登錄</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/5 pl-2 pb-2">
+                                    <div class="estimate__box">
+                                      <span>面積</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/5 pl-2 pb-2">
+                                    <div class="estimate__box">
+                                      <span>資料來源</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="estimate__item">
+                              <div class="estimate__inner">
+                                <div class="estimate__inner1">
+                                  <div class="estimate__box estimate__box1">
+                                    <span>10701</span>
+                                  </div>
+                                </div>
+                                <div class="estimate__inner2">
+                                  <div class="w-1/5 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>29,500</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/5 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>3,900</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/5 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>200,000</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/5 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>94.27</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/5 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>內政部實價登錄</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="estimate__item">
+                              <div class="estimate__inner">
+                                <div class="estimate__inner1">
+                                  <div class="estimate__box estimate__box1">
+                                    <span>10701</span>
+                                  </div>
+                                </div>
+                                <div class="estimate__inner2">
+                                  <div class="w-1/5 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>29,500</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/5 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>3,900</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/5 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>200,000</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/5 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>94.27</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/5 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>法務部土地標售</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="estimate__item">
+                              <div class="estimate__inner">
+                                <div class="estimate__inner1">
+                                  <div class="estimate__box estimate__box1">
+                                    <span>10701</span>
+                                  </div>
+                                </div>
+                                <div class="estimate__inner2">
+                                  <div class="w-1/5 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>29,500</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/5 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>3,900</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/5 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>200,000</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/5 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>94.27</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/5 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>法務部土地標售</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="querylist__section querylist__section1">
+                      <div class="estimate__title">
+                        <img src="img/icon/price-tag.svg" alt="">
+                        <h3 class="font-bold text-white text-2xl ml-2">系統地價估算</h3>
+                      </div>
+                      <div class="estimate__content">
+                        <div class="wrap__tiny">
+                          <span class="estimate__weights">影響地價特徵因子權重</span>
+                          <div class="estimate__list">
+                            <div class="estimate__item">
+                              <div class="estimate__inner">
+                                <div class="estimate__inner1">
+                                  <div class="estimate__box">
+                                    <span>TOP10</span>
+                                  </div>
+                                </div>
+                                <div class="estimate__inner2">
+                                  <div class="w-2/4 pl-2 pb-2">
+                                    <div class="estimate__box">
+                                      <span>TOP10 特徵因子</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/4 pl-2 pb-2">
+                                    <div class="estimate__box">
+                                      <span>系統模型權重</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box2">
+                                      <span>自行設定權重</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="estimate__item">
+                              <div class="estimate__inner">
+                                <div class="estimate__inner1">
+                                  <div class="estimate__box estimate__box1">
+                                    <span>1</span>
+                                  </div>
+                                </div>
+                                <div class="estimate__inner2">
+                                  <div class="w-2/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>土地使用分區</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>0.32</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box3">
+                                      <span></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="estimate__item">
+                              <div class="estimate__inner">
+                                <div class="estimate__inner1">
+                                  <div class="estimate__box estimate__box1">
+                                    <span>2</span>
+                                  </div>
+                                </div>
+                                <div class="estimate__inner2">
+                                  <div class="w-2/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>人口密度</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>0.21</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box3">
+                                      <span></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="estimate__item">
+                              <div class="estimate__inner">
+                                <div class="estimate__inner1">
+                                  <div class="estimate__box estimate__box1">
+                                    <span>3</span>
+                                  </div>
+                                </div>
+                                <div class="estimate__inner2">
+                                  <div class="w-2/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>居民消費能力</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>0.11</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box3">
+                                      <span></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="estimate__item">
+                              <div class="estimate__inner">
+                                <div class="estimate__inner1">
+                                  <div class="estimate__box estimate__box1">
+                                    <span>4</span>
+                                  </div>
+                                </div>
+                                <div class="estimate__inner2">
+                                  <div class="w-2/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>學區</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>0.09</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box3">
+                                      <span></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="estimate__item">
+                              <div class="estimate__inner">
+                                <div class="estimate__inner1">
+                                  <div class="estimate__box estimate__box1">
+                                    <span>5</span>
+                                  </div>
+                                </div>
+                                <div class="estimate__inner2">
+                                  <div class="w-2/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>與商業中心距離</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>0.08</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box3">
+                                      <span></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="estimate__item">
+                              <div class="estimate__inner">
+                                <div class="estimate__inner1">
+                                  <div class="estimate__box estimate__box1">
+                                    <span>6</span>
+                                  </div>
+                                </div>
+                                <div class="estimate__inner2">
+                                  <div class="w-2/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>地方犯罪比例</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>0.07</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box3">
+                                      <span></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="estimate__item">
+                              <div class="estimate__inner">
+                                <div class="estimate__inner1">
+                                  <div class="estimate__box estimate__box1">
+                                    <span>7</span>
+                                  </div>
+                                </div>
+                                <div class="estimate__inner2">
+                                  <div class="w-2/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>交通便利性</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>0.05</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box3">
+                                      <span></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="estimate__item">
+                              <div class="estimate__inner">
+                                <div class="estimate__inner1">
+                                  <div class="estimate__box estimate__box1">
+                                    <span>8</span>
+                                  </div>
+                                </div>
+                                <div class="estimate__inner2">
+                                  <div class="w-2/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>人口素質</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>0.03</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box3">
+                                      <span></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="estimate__item">
+                              <div class="estimate__inner">
+                                <div class="estimate__inner1">
+                                  <div class="estimate__box estimate__box1">
+                                    <span>9</span>
+                                  </div>
+                                </div>
+                                <div class="estimate__inner2">
+                                  <div class="w-2/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>公園綠地</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>0.02</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box3">
+                                      <span></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="estimate__item">
+                              <div class="estimate__inner">
+                                <div class="estimate__inner1">
+                                  <div class="estimate__box estimate__box1">
+                                    <span>10</span>
+                                  </div>
+                                </div>
+                                <div class="estimate__inner2">
+                                  <div class="w-2/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>地形</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box1">
+                                      <span>0.02</span>
+                                    </div>
+                                  </div>
+                                  <div class="w-1/4 pl-2 pb-2">
+                                    <div class="estimate__box estimate__box3">
+                                      <span></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="estimate__price">
+                          <div class="wrap__tiny">
+                            <div class="price__inner">
+                              <div class="price__box1">
+                                <h3>系統預測價格:</h3>
+                                <h2>1688萬</h2>
+                              </div>
+                              <div class="price__box2">
+                                <div class="price__custom">
+                                  <a href="javascript:;">自訂權重價格</a>
+                                  <h2>1708萬</h2>
+                                </div>
+                                <a class="clear__price" href="javascript:;">清除權重價格</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="text-white flex flex-wrap justify-end">※本平台資料僅供參考使用</span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>

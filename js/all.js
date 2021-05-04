@@ -9,9 +9,9 @@ $(document).ready(function () {
 
   // 切換list內容
   let index = 0;
-  // $('.search__item').eq(index).addClass('is-active');
+  $('.search__item').eq(index).addClass('is-active');
   $('.search__content').eq(index).show();
-  // $('.querylist__content').eq(index).show();
+  $('.querylist__content').eq(index).show();
 
   $('.search__item').on('click', function () {
     index = $(this).index();
