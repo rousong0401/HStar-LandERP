@@ -24,7 +24,10 @@
 // querylist
 
 .querylist__main {
-  padding: 45px 30px;
+  padding: 30px 0;
+  @include mq(md) {
+    padding: 45px 30px;
+  }
 }
 
 .querylist__lotinfo {
@@ -583,7 +586,10 @@
 .mobile-querylist__section {
   padding: 20px 30px 40px;
   background-color: #3B3B3B;
-  border-radius: 12px;
+  border-radius: 0 0 12px 12px;
+  @include mq(lg) {
+    border-radius: 12px;
+  }
 }
 
 .mobile-querylist__box {
@@ -757,11 +763,32 @@
 .mobile-environment__title {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   border: 1px solid $white;
-  width: 200px;
+  width: 180px;
   padding: 1rem;
   margin-bottom: 30px;
+  @include mq(md) {
+    width: 200px;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+    @include mq(md) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.mobile-environment__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+    @include mq(md) {
+      margin-bottom: 40px;
+    }
+  }
 }
 
 .mobile-environment__boxTitle {
@@ -770,15 +797,197 @@
   align-items: center;
   margin-bottom: 10px;
   img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
+    @include mq(md) {
+      width: 24px;
+      height: 24px;
+    }
   }
 }
 
 .mobile-environment__inner {
   color: $white;
   margin-left: 30px;
+  @include mq($until:md) {
+    font-size: 14px;
+  }
 }
 
-
 // environment mobile end
+
+// estimate mobile
+
+.mobile-estimate__title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $white;
+  width: 180px;
+  padding: 1rem;
+  margin-bottom: 30px;
+  @include mq(md) {
+    width: 200px;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+    @include mq(md) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.mobile-estimate__weights {
+  color: #F8B825;
+  margin-bottom: 10px;
+  @include mq($until:md) {
+    font-size: 14px;
+  }
+}
+
+.mobile-estimate__item {
+  border-radius: 5px;
+  overflow: hidden;
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  &:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.mobile-estimate__inner {
+  display: flex;
+  flex-wrap: wrap;
+  &:not(:last-child) {
+    border-bottom: 2px solid $white;
+  }
+  @include mq($until:md) {
+    font-size: 14px;
+  }
+}
+
+.mobile-estimate__boxTitle {
+  background-color: #F8B825;
+  padding: 12px 16px;
+} 
+
+.mobile-estimate__boxTitle1 {
+  background: linear-gradient(180deg, #FFB917 0%, #FF8000 100%);
+  color: $white;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 7px 0;
+    border-color: #fff transparent transparent;
+    @include mq(md) {
+      left: 120px;
+    }
+  }
+}
+
+.mobile-estimate__boxContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  background-color: $gray;
+  padding: 12px 16px;
+}
+
+.mobile-estimate__price {
+  border-top: 1px solid $white;
+}
+
+.mobile-price__inner {
+  padding: 20px 0;
+  @include mq(sm) {
+    padding: 30px;
+  }
+}
+
+.mobile-price__box1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 12px;
+  h3 {
+    color: $white;
+    @include mq(md) {
+      font-size: 20px;
+    }
+  }
+  h2 {
+    color: #F8B825;
+    font-size: 20px;
+    @include mq(md) {
+      font-size: 25px;
+    }
+  }
+}
+
+.mobile-price__box2 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #D21831;
+    font-size: 14px;
+    color: $white;
+    padding: 12px 16px;
+    height: 100%;
+    transition: all .3s;
+    &:hover {
+      background-color: $primary;
+      color: #3b3b3b;
+    }
+    @include mq(md) {
+      font-size: 20px;
+    }
+  }
+  h2 {
+    background-color: $white;
+    padding: 12px 16px;
+    font-size: 20px;
+    @include mq(md) {
+      font-size: 25px;
+    }
+  }
+}
+
+.mobile-clear__price {
+  display: block;
+  color: $white;
+  border: 1px solid $white;
+  padding: 12px 16px;
+  border-radius: 5px;
+  text-align: center;
+  transition: all .3s;
+  &:hover {
+    background-color: $primary;
+    color: #3b3b3b;
+  }
+  @include mq(md) {
+    font-size: 20px;
+  }
+}
+
+// estimate mobile end

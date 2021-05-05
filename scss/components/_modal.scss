@@ -1,0 +1,148 @@
+// modal
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .7s;
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;  
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal__main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 30px;
+  @include mq(md) {
+    padding: 40px;
+  }
+}
+
+.modal__card {
+  position: relative;
+  background-color: $white;
+  width: 100%;
+  padding: 30px;
+  @include mq(md) {
+    padding: 60px 100px;
+  }
+  @include mq(lg) {
+    font-size: 18px;
+  }
+  @include mq(xl) {
+    padding: 60px 130px 100px;
+  }
+}
+
+.modal__list {
+  @include mq(lg) {
+    width: 640px;
+  }
+}
+
+.modal__item {
+  .license__dataList {
+    display: none;
+    @include mq(md) {
+      margin-left: 110px;
+      display: block;
+    }
+    p {
+      line-height: 2;
+    }
+  }
+  .mobile-license__dataList {
+    display: block;
+    @include mq(sm) {
+      margin-left: 36px;
+    }
+    @include mq(md) {
+      display: none;
+    }
+  }
+}
+
+.modal__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.modal__licenseList {
+  @include mq(sm) {
+    margin-left: 36px;
+  }
+}
+
+.modal__licenseItem {
+  display: flex;
+  flex-wrap: wrap;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  transition: all .3s;
+  @include mq($until:sm) {
+    top: 1rem;
+    right: 1rem;
+  } 
+  &::before,&::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40px;
+    height: 2px;
+    background-color: #3b3b3b;
+    transition: all .3s;
+  }
+  &::before {
+    transform: translate(-50%,-50%) rotate(45deg);
+  }
+  &::after {
+    transform: translate(-50%,-50%) rotate(-45deg);
+  }
+  &:hover {
+    @include mq(xl) {
+      transform: rotate(90deg);
+      &::before,&::after {
+        background-color: $primary;
+      } 
+    }
+  }
+}
+
+// modal end
