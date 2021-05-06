@@ -1,5 +1,20 @@
 $(document).ready(function () {
 
+  // loading
+  $(window).on('load', function () {
+    setTimeout(function () {
+      $('.loading').addClass('is-loaded');
+    }, 3500);
+
+  });
+
+  // AOS
+  setTimeout(function () {
+    AOS.init({
+      once: true
+    });
+  }, 4000);
+
   // 點擊漢堡選單顯示nav
   $('.home__burger').on('click', function () {
     $(".home__burger").toggleClass('is-active');
@@ -15,7 +30,7 @@ $(document).ready(function () {
 
   $('.search__item').on('click', function () {
     index = $(this).index();
-
+    console.log(index);
     $('.search__item').eq(index).addClass('is-active').siblings().removeClass('is-active');
 
     // 首頁查詢
@@ -61,6 +76,17 @@ $(document).ready(function () {
     $('html,body').animate({
       scrollTop: $('.main').offset().top
     }, 700, 'swing');
+
+  });
+
+  // 手機板-點擊對應search__item顯示對應內容
+  $('.mobile-search__item').eq(index).addClass('is-active');
+  $('.mobile-search__item').on('click', function (e) {
+    // index = $(this).index();
+    console.log(this);
+    $(this).siblings().slideToggle();
+    $(this).parent().siblings().find('.mobile-search__content').slideUp();
+    $(this).addClass('is-active');
 
   });
 

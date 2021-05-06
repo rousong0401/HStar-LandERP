@@ -138,6 +138,9 @@
 .querylist__data {
   .search__list {
     margin-left: 0;
+    @include mq($until:md) {
+      display: none;
+    }
   }
   .search__item {
     padding: 16px 56px;
@@ -170,9 +173,23 @@
 }
 
 .querylist__content {
-  display: none;
-  &.is-active {
-    display: block;
+  @include mq(md) {
+    display: none;
+    &.is-active {
+      display: block;
+    }
+  }
+  @include mq($until:md) {
+    overflow: hidden;
+    &:first-child {
+      border-radius: 12px 12px 0 0;
+    }
+    &:last-child {
+      border-radius: 0 0 12px 12px;
+    }
+    &:not(:last-child) {
+      border-bottom: 2px solid $white;
+    }
   }
 }
 
@@ -581,12 +598,36 @@
 
 // estimate end
 
+// mobile search__item 
+.mobile-search__item {
+  background-color: $gray-200;
+  font-size: 18px;
+  padding: 20px;
+  color: $white;
+  @include mq(md) {
+    display: none;
+  }
+  @include mq($until:sm) {
+    font-size: 16px;
+  }
+}
+
+.mobile-search__content {
+  @include mq($until:md) {
+    display: none;
+  }
+}
+
+// // mobile search__item end
+
 // basicdata mobile 
 
 .mobile-querylist__section {
   padding: 20px 30px 40px;
   background-color: #3B3B3B;
-  border-radius: 0 0 12px 12px;
+  @include mq(md) {
+    border-radius: 0 0 12px 12px;
+  }
   @include mq(lg) {
     border-radius: 12px;
   }
@@ -673,12 +714,21 @@
 }
 
 .mobile-resume__boxTitle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
   color: $white;
   background-color: $gray-200;
   padding: 12px 16px;
 }
 
 .mobile-resume__boxContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
   background-color: $gray;
   color: $gray-200;
   padding: 12px 16px;
@@ -903,6 +953,7 @@
   height: 100%;
   background-color: $gray;
   padding: 12px 16px;
+  text-align: right;
 }
 
 .mobile-estimate__price {
