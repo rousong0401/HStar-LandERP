@@ -549,10 +549,6 @@ span { display: inline-block; }
 
 @media (min-width: 75em) { .new__title { font-size: 18px; } }
 
-.new__moreInfo { color: #F0BC5E; }
-
-.new__moreInfo:hover { color: #ECB500; }
-
 .engine { background-color: #F5F5F5; }
 
 .engine__main { padding: 1rem 1.5rem; }
