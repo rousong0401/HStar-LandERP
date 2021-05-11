@@ -5,7 +5,6 @@ $(document).ready(function () {
     setTimeout(function () {
       $('.loading').addClass('is-loaded');
     }, 3500);
-
   });
 
   // AOS
@@ -55,39 +54,32 @@ $(document).ready(function () {
     let id = $(this).data('id');
     console.log(id);
     $(id).addClass('is-active');
-
   })
 
   // 當滑動到特定區塊時加入特定Class
   $(window).scroll(function () {
-
     if ($(window).scrollTop() >= $('.search__list').offset().top) {
       $('.header__scroll').addClass('is-active');
     } else {
       $('.header__scroll').removeClass('is-active');
     }
-
   });
 
   // 點擊滑動到特定區塊
   $('.header__scrollArrow').on('click', function (e) {
-
     e.preventDefault();
     $('html,body').animate({
       scrollTop: $('.main').offset().top
     }, 700, 'swing');
-
   });
 
   // 手機板-點擊對應search__item顯示對應內容
   $('.mobile-search__item').eq(index).addClass('is-active');
   $('.mobile-search__item').on('click', function (e) {
-    // index = $(this).index();
     console.log(this);
     $(this).siblings().slideToggle();
     $(this).parent().siblings().find('.mobile-search__content').slideUp();
     $(this).addClass('is-active');
-
   });
 
   // 電腦版-點擊鄰近建案連結跳出對應燈箱資訊
@@ -95,21 +87,18 @@ $(document).ready(function () {
     let id = $(this).data('id');
     console.log(id);
     $(id).addClass('is-active');
-
   });
+
   // 手機版-點擊鄰近建案連結跳出對應燈箱資訊
   $('.mobile-nearproject__link').on('click', function (e) {
     let id = $(this).data('id');
     console.log(id);
     $(id).addClass('is-active');
-
   });
 
   // 關閉燈箱資訊
   $('.modal__close').on('click', function (e) {
-
     $('.modal').removeClass('is-active');
-
   });
 
 });
